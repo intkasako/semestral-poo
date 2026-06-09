@@ -1,12 +1,14 @@
 package entities;
 
 public class Alternativa {
+	private char letra;
     private String texto;
     private boolean veracidade;
 
-    public Alternativa(String texto, boolean veracidade) {
+    public Alternativa(String texto, char letra, boolean veracidade) {
         this.veracidade = veracidade;
         this.texto = texto;
+        this.letra = letra;
     }
 
     public String getTexto() {

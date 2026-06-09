@@ -4,8 +4,9 @@ public enum Dificuldade {
     FACIL(1, "Fácil"),
     MEDIO(2, "Médio"),
     DIFICIL(3, "Difícil"),
-    GENIO(4, "Gênio");
-
+	PRODIGIO(4, "Prodígio"),
+	GENIO(5, "Gênio");
+	
     private final int valor;
     private final String descricao;
 
@@ -14,6 +15,10 @@ public enum Dificuldade {
         this.descricao = descricao;
     }
 
-    public int getValor() { return valor; }
-    public String getDescricao() { return descricao; }
+    public int getValor() {
+    		return valor; 
+    		}
+    public String getDescricao() {
+    	return descricao; 
+    	}
 }

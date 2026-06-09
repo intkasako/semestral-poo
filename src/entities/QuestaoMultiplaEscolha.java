@@ -15,11 +15,18 @@ public class QuestaoMultiplaEscolha extends Questao {
 
     @Override
     public boolean verificarResposta(String respostaDoUsuario) {
+        for(Alternativa alternativa : alternativas) {
+        	if(alternativa.isVeracidade() == true) {
+        		return true;
+        	}else {
+                continue;
+            }
+        }
         return false;
     }
 
-    public void addAlternativa(String texto, boolean veracidade) {
-        alternativas.add(new Alternativa(texto, veracidade));
+    public void addAlternativa(String texto, char letra, boolean veracidade) {
+        alternativas.add(new Alternativa(texto, letra, veracidade));
     }
 }
 

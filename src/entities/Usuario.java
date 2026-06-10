@@ -9,14 +9,13 @@ public class Usuario {
     private int id;
     private String nome;
     private String email;
-    private List<Integer> quizzesConcluidosID;
+    private List<Integer> quizzesConcluidosID = new ArrayList<>();
     private int pontuacao;
 
-    public Usuario(int id, String nome, String email, List<Integer> quizzesConcluidosID) {
+    public Usuario(int id, String nome, String email) {
         this.id = id;
         this.nome = nome;
         this.email = email;
-        this.quizzesConcluidosID = new ArrayList<>();
         this.pontuacao = 0;
     }
 

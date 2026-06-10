@@ -1,6 +1,7 @@
 package entities;
 
 import enums.Dificuldade;
+import enums.Letra;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -25,7 +26,7 @@ public class QuestaoMultiplaEscolha extends Questao {
         return false;
     }
 
-    public void addAlternativa(String texto, char letra, boolean veracidade) {
+    public void addAlternativa(String texto, Letra letra, boolean veracidade) {
         alternativas.add(new Alternativa(texto, letra, veracidade));
     }
 }

@@ -7,6 +7,7 @@ public abstract class Questao {
     private String enunciado;
     private String assunto;
     private Dificuldade dificuldade;
+    private int pontuacao;
 
 
     public Questao(String enunciado, String assunto, int id, Dificuldade dificuldade) {
@@ -14,9 +15,14 @@ public abstract class Questao {
         this.assunto = assunto;
         this.id = id;
         this.dificuldade = dificuldade;
+        this.pontuacao = dificuldade.getValor();
     }
 
     public abstract boolean verificarResposta(String respostaDoUsuario);
+
+    public int calcularPontuacao() {
+        return pontuacao;
+    }
 
     public String getEnunciado() {
         return enunciado;

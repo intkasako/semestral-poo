@@ -1,12 +1,16 @@
 package entities;
 
+import enums.Letra;
+
 public class Alternativa {
+	private Letra letra;
     private String texto;
     private boolean veracidade;
 
-    public Alternativa(String texto, boolean veracidade) {
+    public Alternativa(String texto, Letra letra, boolean veracidade) {
         this.veracidade = veracidade;
         this.texto = texto;
+        this.letra = letra;
     }
 
     public String getTexto() {
@@ -24,4 +28,8 @@ public class Alternativa {
     /*public void setVeracidade(boolean veracidade) {
         this.veracidade = veracidade;
     }*/
+
+    public Letra getLetra() {
+        return letra;
+    }
 }

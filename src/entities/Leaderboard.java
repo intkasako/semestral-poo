@@ -5,13 +5,14 @@ import java.util.List;
 
 public class Leaderboard {
     List<Usuario> ranking;
+    int index;
 
     public Leaderboard(List<Usuario> ranking) {
         this.ranking = new ArrayList<>();
     }
     
     public void processarLeaderboard(Usuario usuario) {
-        int index;
+        
         usuario.isMaiorPontuacao();
 
         // verifica se já tem no ranking

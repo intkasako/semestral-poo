@@ -24,6 +24,8 @@ public abstract class Questao {
         return pontuacao;
     }
 
+    //Getters e Setters.
+
     public String getEnunciado() {
         return enunciado;
     }
@@ -34,5 +36,13 @@ public abstract class Questao {
 
     public int getId(){
         return id;
+    }
+
+    public Dificuldade getDificuldade() {
+        return dificuldade;
+    }
+
+    public void setDificuldade(Dificuldade dificuldade) {
+        this.dificuldade = dificuldade;
     }
 }

@@ -11,6 +11,10 @@ public class Usuario {
     private String email;
     private List<Integer> quizzesConcluidosID = new ArrayList<>();
     private int pontuacao;
+    
+    //adicionei isso (Luiz)
+    private int pontuacaoMax = 0;
+    private boolean inLeaderboard = false;
 
     public Usuario(int id, String nome, String email) {
         this.id = id;
@@ -38,6 +42,11 @@ public class Usuario {
     public void adicionarPontuacao(Dificuldade dificuldade){
         this.pontuacao = pontuacao + dificuldade.getValor();
     }
+    
+    //adicionei isso (Luiz)
+    public void isMaiorPontuacao() {
+    	if (pontuacao > pontuacaoMax) pontuacaoMax = pontuacao;
+    }
 
     public int getId() {
         return id;
@@ -55,5 +64,16 @@ public class Usuario {
         return pontuacao;
     }
 
-  
+    //adicionei isso (Luiz)
+    public int getpontuacaoMax() {
+        return pontuacaoMax;
+    }
+    
+    public boolean existeLeaderboard() {
+        return inLeaderboard;
+    }
+
+    public void setExisteLeaderboard(boolean esta){
+        this.inLeaderboard = esta;
+    }
 }

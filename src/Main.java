@@ -31,9 +31,7 @@ public class Main {
 
         GerenciadorQuiz gerenciador = new GerenciadorQuiz(
             questoes,
-            usuario,
-            dificuldadesPermitidas,
-            categoriasPermitidas
+            usuario
         );
 
         System.out.println("=== Quiz infinito ===");
@@ -67,7 +65,6 @@ public class Main {
                 System.out.println("Acertou!");
                 System.out.println("Pontuacao da partida: " + gerenciador.getPontuacaoAtual());
                 System.out.println("Acertos: " + gerenciador.getAcertos());
-                System.out.println("IDs ja sorteados: " + gerenciador.getIdsQuestoesSorteadas());
                 System.out.println();
             } else {
                 System.out.println("Errou! Fim de jogo.");

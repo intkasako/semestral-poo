@@ -1,4 +1,7 @@
+import entities.Alternativa;
 import entities.Questao;
+import entities.QuestaoMultiplaEscolha;
+import entities.QuestaoVerdadeiroFalso;
 import entities.Usuario;
 import enums.Dificuldade;
 import services.GerenciadorQuiz;
@@ -42,6 +45,18 @@ public class Main {
             System.out.println("ID: " + questaoAtual.getId());
             System.out.println("Dificuldade: " + questaoAtual.getDificuldade().getDescricao());
             System.out.println("Pergunta: " + questaoAtual.getEnunciado());
+
+            if (questaoAtual instanceof QuestaoMultiplaEscolha qme) {
+                List<Alternativa> ordenadas = new ArrayList<>(qme.getAlternativas());
+                ordenadas.sort((a, b) -> a.getLetra().getValor() - b.getLetra().getValor());
+                for (Alternativa alt : ordenadas) {
+                    System.out.println("  " + alt.getLetra().getSimbolo() + ") " + alt.getTexto());
+                }
+            } else if (questaoAtual instanceof QuestaoVerdadeiroFalso) {
+                System.out.println("  V) Verdadeiro");
+                System.out.println("  F) Falso");
+            }
+
             System.out.print("Resposta: ");
 
             String resposta = scanner.nextLine();

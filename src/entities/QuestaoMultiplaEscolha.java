@@ -28,11 +28,10 @@ public class QuestaoMultiplaEscolha extends Questao {
 
     @Override
     public boolean verificarResposta(String respostaDoUsuario) {
-        for(Alternativa alternativa : alternativas) {
-        	if(alternativa.isVeracidade() == true) {
-        		return true;
-        	}else {
-                continue;
+        String resposta = respostaDoUsuario.trim().toUpperCase();
+        for (Alternativa alternativa : alternativas) {
+            if (String.valueOf(alternativa.getLetra().getSimbolo()).equals(resposta)) {
+                return alternativa.isVeracidade();
             }
         }
         return false;

@@ -43,14 +43,14 @@ public class QuestaoParser {
             if (type.equals("multiple")) {
                 QuestaoMultiplaEscolha q = new QuestaoMultiplaEscolha(enunciado, assunto, id, dif);
 
-                // monta lista de letras e embaralha
+                //monta lista de letras e embaralha
                 List<Letra> letras = new ArrayList<>();
                 for (Letra l : Letra.values()) {
                     letras.add(l);
                 }
                 Collections.shuffle(letras);
 
-                // correta entra com a primeira letra sorteada
+                //correta entra com a primeira letra sorteada
                 q.addAlternativa(correta, letras.get(0), true);
 
                 // incorretas entram com o restante das letras

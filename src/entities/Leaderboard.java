@@ -152,4 +152,18 @@ public class Leaderboard {
     public List<Usuario> getRanking() {
         return ranking;
     }
+
+    // remove o usuario do ranking (pelo id) e salva o txt atualizado
+    public boolean deletar(Usuario usuario) {
+        boolean removido = ranking.removeIf(u -> u.getId() == usuario.getId());
+
+        if (removido) {
+            usuario.setExisteLeaderboard(false);
+            salvar();
+        }
+
+        return removido;
+    }
+
+
 }

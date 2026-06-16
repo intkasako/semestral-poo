@@ -18,7 +18,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        // carrega o ranking salvo em arquivo e faz login ou cadastro do jogador
+        //carrega o ranking salvo em arquivo e faz login ou cadastro do jogador
         Leaderboard leaderboard = new Leaderboard("leaderboard.txt");
         Usuario usuario = loginOuCadastro(scanner, leaderboard);
         List<Questao> questoes = carregarQuestoes();
@@ -33,7 +33,7 @@ public class Main {
 
         while (continuarJogando) {
 
-            // monta o gerenciador com as questoes ja filtradas por dificuldade e categoria
+            //monta o gerenciador com as questoes ja filtradas por dificuldade e categoria
             GerenciadorQuiz gerenciador = new GerenciadorQuiz(
                 questoes,
                 usuario
@@ -50,7 +50,7 @@ public class Main {
                 System.out.println("Dificuldade: " + questaoAtual.getDificuldade().getDescricao());
                 System.out.println("Pergunta: " + questaoAtual.getEnunciado());
 
-                // mostra as opcoes dependendo do tipo da questao
+                //mostra as opcoes dependendo do tipo da questao
                 if (questaoAtual instanceof QuestaoMultiplaEscolha qme) {
                     // ordena pra sempre mostrar A, B, C, D em ordem
                     List<Alternativa> ordenadas = new ArrayList<>(qme.getAlternativas());
@@ -79,25 +79,44 @@ public class Main {
                 }
             }
 
-            // resumo final da partida
+            //resumo final da partida
             System.out.println("\nPontuacao final da partida: " + gerenciador.getPontuacaoAtual());
             System.out.println("Pontuacao global de " + usuario.getNome() + ": " + usuario.getPontuacao());
             System.out.println("Total de acertos: " + gerenciador.getAcertos());
 
-            // salva o resultado no ranking e mostra o placar
+            //salva o resultado no ranking e mostra o placar
             leaderboard.registrar(usuario);
             leaderboard.exibir();
 
-            // OPÇÃO DE SAÍDA
-            System.out.println("\nDeseja jogar novamente? (S/N)");
+            //OPÇÃO DE SAÍDA
+            System.out.println("\nO que deseja fazer?");
+            System.out.println("S - Jogar novamente");
+            System.out.println("N - Sair");
+            System.out.println("D - Deletar minha conta");
             System.out.print("Opcao: ");
             String escolhaDeSaida = scanner.nextLine().trim().toUpperCase();
 
             if (escolhaDeSaida.equals("N")) {
-                continuarJogando = false; // Isso quebra o loop principal e finaliza o programa
+                continuarJogando = false; //quebra o loop principal e finaliza o programa
                 System.out.println("\nObrigado por jogar, " + usuario.getNome() + "! Ate logo.");
+            } else if (escolhaDeSaida.equals("D")) {
+                System.out.print("Tem certeza que deseja deletar sua conta? (S/N): ");
+                String confirmacao = scanner.nextLine().trim().toUpperCase();
+
+                if (confirmacao.equals("S")) {
+                    boolean removido = leaderboard.deletar(usuario);
+                    if (removido) {
+                        System.out.println("\nConta de " + usuario.getNome() + " deletada com sucesso.");
+                    } else {
+                        System.out.println("\nConta nao encontrada no ranking. Nada foi deletado.");
+                    }
+                    continuarJogando = false; //sem conta, encerra o programa
+                    System.out.println("Ate logo!");
+                } else {
+                    System.out.println("\nDelecao cancelada.");
+                }
             }
-        } // Fim do loop principal
+        } //fim do loop principal
 
         scanner.close();
     }
@@ -155,7 +174,7 @@ public class Main {
         return novo;
     }
 
-    private static List<Questao> carregarQuestoes() {
+    private static List<Questao> carregarQuestoes() { //carrega a lista de questoes usando o parser para pegar as informaçoes do testequestoes.txt
         QuestaoParser parser = new QuestaoParser();
 
         try {

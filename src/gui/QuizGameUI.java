@@ -2,11 +2,42 @@ package gui;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.List;
 
 public class QuizGameUI extends JFrame {
 
     private CardLayout cardLayout;
     private JPanel mainPanel;
+
+    // --- Estado da tela de jogo ---
+    private JLabel lblEnunciado;
+    private JRadioButton[] opcoes;
+    private ButtonGroup grupoAlternativas;
+    private List<Questao> questoes;
+    private int indiceAtual;
+
+    // Modelo simples de questão usado pela tela de jogo
+    private static class Questao {
+        final String enunciado;
+        final String[] alternativas;
+        Questao(String enunciado, String[] alternativas) {
+            this.enunciado = enunciado;
+            this.alternativas = alternativas;
+        }
+    }
+
+    private List<Questao> criarBancoDeQuestoes() {
+        return List.of(
+            new Questao("Qual é o paradigma principal do Java?",
+                new String[]{"Funcional", "Orientação a Objetos", "Lógico", "Estruturado"}),
+            new Questao("Qual palavra-chave cria uma subclasse em Java?",
+                new String[]{"implements", "extends", "super", "new"}),
+            new Questao("O que significa o 'O' de POO?",
+                new String[]{"Operação", "Objeto", "Ordenação", "Otimização"}),
+            new Questao("Qual estrutura permite repetir um bloco de código?",
+                new String[]{"if", "switch", "for", "return"})
+        );
+    }
 
     public QuizGameUI() {
         setTitle("POO Quiz - Jogo Infinito");
@@ -111,24 +142,29 @@ public class QuizGameUI extends JFrame {
         JPanel panel = new JPanel(new BorderLayout());
         panel.setBorder(BorderFactory.createEmptyBorder(20, 20, 20, 20));
 
-        // Simulando o atributo enunciado da classe Questao
-        JLabel lblEnunciado = new JLabel("<html>Qual é o paradigma principal do Java?<html>");
+        // Banco de questões e estado inicial
+        questoes = criarBancoDeQuestoes();
+        indiceAtual = 0;
+
+        // Atributo enunciado da classe Questao (preenchido dinamicamente)
+        lblEnunciado = new JLabel();
         lblEnunciado.setFont(new Font("Arial", Font.PLAIN, 18));
         panel.add(lblEnunciado, BorderLayout.NORTH);
 
-        // Simulando QuestaoMultiplaEscolha
+        // Alternativas (preenchidas dinamicamente a cada questão)
         JPanel painelAlternativas = new JPanel(new GridLayout(4, 1, 5, 5));
-        ButtonGroup bg = new ButtonGroup();
-        JRadioButton opt1 = new JRadioButton("Funcional");
-        JRadioButton opt2 = new JRadioButton("Orientação a Objetos");
-        JRadioButton opt3 = new JRadioButton("Lógico");
-        JRadioButton opt4 = new JRadioButton("Estruturado");
-
-        bg.add(opt1); bg.add(opt2); bg.add(opt3); bg.add(opt4);
-        painelAlternativas.add(opt1); painelAlternativas.add(opt2);
-        painelAlternativas.add(opt3); painelAlternativas.add(opt4);
+        grupoAlternativas = new ButtonGroup();
+        opcoes = new JRadioButton[4];
+        for (int i = 0; i < opcoes.length; i++) {
+            opcoes[i] = new JRadioButton();
+            grupoAlternativas.add(opcoes[i]);
+            painelAlternativas.add(opcoes[i]);
+        }
 
         panel.add(painelAlternativas, BorderLayout.CENTER);
+
+        // Carrega a primeira questão
+        carregarQuestao(indiceAtual);
 
         // Botões de ação
         JPanel painelBotoes = new JPanel();
@@ -136,9 +172,13 @@ public class QuizGameUI extends JFrame {
         JButton btnSair = new JButton("Desistir e Ver Placar");
 
         btnResponder.addActionListener(e -> {
-            JOptionPane.showMessageDialog(panel, "Resposta registrada! Carregando próxima questão...");
-            // Lógica de loop infinito de questões entraria aqui
-            bg.clearSelection();
+            if (grupoAlternativas.getSelection() == null) {
+                JOptionPane.showMessageDialog(panel, "Selecione uma alternativa antes de responder.");
+                return;
+            }
+            // Avança para a próxima questão (loop infinito pelo banco)
+            indiceAtual = (indiceAtual + 1) % questoes.size();
+            carregarQuestao(indiceAtual);
         });
 
         btnSair.addActionListener(e -> cardLayout.show(mainPanel, "TelaLeaderboard"));
@@ -148,6 +188,16 @@ public class QuizGameUI extends JFrame {
         panel.add(painelBotoes, BorderLayout.SOUTH);
 
         return panel;
+    }
+
+    // Atualiza o enunciado e as alternativas com a questão do índice informado
+    private void carregarQuestao(int indice) {
+        Questao q = questoes.get(indice);
+        lblEnunciado.setText("<html>" + q.enunciado + "</html>");
+        for (int i = 0; i < opcoes.length; i++) {
+            opcoes[i].setText(q.alternativas[i]);
+        }
+        grupoAlternativas.clearSelection();
     }
 
     // --- TELA 4: PLACAR GLOBAL (LEADERBOARD) ---

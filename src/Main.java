@@ -1,4 +1,5 @@
 import entities.Alternativa;
+import entities.Leaderboard;
 import entities.Questao;
 import entities.QuestaoMultiplaEscolha;
 import entities.QuestaoVerdadeiroFalso;
@@ -17,7 +18,8 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Usuario usuario = cadastrarUsuario(scanner);
+        Leaderboard leaderboard = new Leaderboard("leaderboard.txt");
+        Usuario usuario = loginOuCadastro(scanner, leaderboard);
         List<Questao> questoes = carregarQuestoes();
 
         if (questoes.isEmpty()) {
@@ -78,13 +80,23 @@ public class Main {
         System.out.println("Pontuacao global de " + usuario.getNome() + ": " + usuario.getPontuacao());
         System.out.println("Total de acertos: " + gerenciador.getAcertos());
 
+        leaderboard.registrar(usuario);
+        leaderboard.exibir();
+
         scanner.close();
     }
 
-    private static Usuario cadastrarUsuario(Scanner scanner) {
+    private static Usuario loginOuCadastro(Scanner scanner, Leaderboard leaderboard) {
         System.out.println("=============================");
         System.out.println("   Bem-vindo ao POO Quiz!");
         System.out.println("=============================");
+        System.out.println();
+        System.out.println("1 - Entrar");
+        System.out.println("2 - Cadastrar");
+        System.out.print("Opcao: ");
+
+        String opcao = scanner.nextLine().trim();
+
         System.out.println();
 
         String nome = "";
@@ -105,13 +117,26 @@ public class Main {
             }
         }
 
+        if (opcao.equals("1")) {
+            Usuario encontrado = leaderboard.buscarUsuario(nome, email);
+            if (encontrado != null) {
+                System.out.println();
+                System.out.println("Bem-vindo de volta, " + encontrado.getNome() + "!");
+                System.out.println("Sua maior pontuacao: " + encontrado.getpontuacaoMax() + " pts");
+                System.out.println();
+                return encontrado;
+            } else {
+                System.out.println("Usuario nao encontrado. Criando conta nova...");
+            }
+        }
+
+        Usuario novo = new Usuario(leaderboard.proximoId(), nome, email);
         System.out.println();
         System.out.println("Cadastro realizado com sucesso!");
         System.out.println("Jogador: " + nome);
         System.out.println("E-mail: " + email);
         System.out.println();
-
-        return new Usuario(1, nome, email);
+        return novo;
     }
 
     private static List<Questao> carregarQuestoes() {

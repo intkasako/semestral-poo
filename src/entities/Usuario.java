@@ -72,9 +72,12 @@ public class Usuario {
         return pontuacao;
     }
 
-    //adicionei isso (Luiz)
     public int getpontuacaoMax() {
         return pontuacaoMax;
+    }
+
+    public void setPontuacaoMax(int pontuacaoMax) {
+        this.pontuacaoMax = pontuacaoMax;
     }
     
     public boolean existeLeaderboard() {

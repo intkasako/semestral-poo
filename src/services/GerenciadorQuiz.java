@@ -11,11 +11,11 @@ import java.util.List;
 import java.util.Map;
 import java.util.Random;
 
-// Esta classe controla o fluxo do jogo a partir do inicio da partida ate o fim.
+//Esta classe controla o fluxo do jogo a partir do inicio da partida ate o fim.
 public class GerenciadorQuiz {
     private List<Questao> questoes;
-    private Map<Dificuldade, List<Questao>> questoesPorDificuldade;
-    private Map<Dificuldade, Integer> indicesPorDificuldade;
+    private Map<Dificuldade, List<Questao>> questoesPorDificuldade; //Map de dificuldades, por List de Questao. A List de Questao tem as questões daquela dificuldade que ainda não foram sorteadas.
+    private Map<Dificuldade, Integer> indicesPorDificuldade; //Map de dificuldades, por int. O int é o index da próxima questão daquela dificuldade a ser sorteada.
     private Usuario usuarioAtual;
     private Questao questaoAtual;
     private Boolean jogoFinalizado;
@@ -142,30 +142,30 @@ public class GerenciadorQuiz {
     }
 
     private void organizarQuestoesPorDificuldade() {
-    questoesPorDificuldade.clear();
-    indicesPorDificuldade.clear();
+        questoesPorDificuldade.clear();
+        indicesPorDificuldade.clear();
 
-    for (Dificuldade dificuldade : Dificuldade.values()) {
-        questoesPorDificuldade.put(dificuldade, new ArrayList<>());
-        indicesPorDificuldade.put(dificuldade, 0);
-    }
+        for (Dificuldade dificuldade : Dificuldade.values()) {
+            questoesPorDificuldade.put(dificuldade, new ArrayList<>());
+            indicesPorDificuldade.put(dificuldade, 0);
+        }
 
-    if (questoes == null) {
-        return;
-    }
+        if (questoes == null) {
+            return;
+        }
 
-    for (Questao questao : questoes) {
-        if (categoriaPermitida(questao.getAssunto())) { //Se a categoria da questão for permitida, ela pegará as questões por dificuldade.
-            questoesPorDificuldade.get(questao.getDificuldade()).add(questao);
+        for (Questao questao : questoes) {
+            if (categoriaPermitida(questao.getAssunto())) { //Se a categoria da questão for permitida, ela pegará as questões por categoria.
+                questoesPorDificuldade.get(questao.getDificuldade()).add(questao); //Se a dificuldade da questão for permitida, ela pegará as questões por dificuldade.
+            }
+        }
+
+        for (List<Questao> lista : questoesPorDificuldade.values()) {
+            Collections.shuffle(lista, random);
         }
     }
 
-    for (List<Questao> lista : questoesPorDificuldade.values()) {
-        Collections.shuffle(lista, random);
-    }
-}
-
-    private Dificuldade sortearDificuldadePorProgresso() {
+    private Dificuldade sortearDificuldadePorProgresso() { //Determina dificuldade do jogo por parte onde usuário está, ou seja, quantas questões ele já acertou. Usa de porcentagem.
         if (acertos < 5) {
             return Dificuldade.FACIL;
         }
@@ -194,7 +194,7 @@ public class GerenciadorQuiz {
             return chance < chanceDificil ? Dificuldade.DIFICIL : Dificuldade.MEDIO;
         }
 
-        return Dificuldade.DIFICIL;
+        return Dificuldade.DIFICIL; //A partir dos 50 acertos, só questões difíceis aparecem.
     }
 
     private Dificuldade sortearDificuldadePermitida() {
@@ -214,13 +214,18 @@ public class GerenciadorQuiz {
         return dificuldadesPermitidas.get(indiceSorteado);
     }
 
-    private void sortearProximaQuestao() {
+    private void sortearProximaQuestao() { //Sorteia a próxima questão a ser respondida, levando em conta as dificuldades e categorias permitidas, e garantindo que a mesma questão não seja sorteada mais de uma vez.
+
+        //Verifica se há questão carregada no jogo (Se não, para).
         if (questoes == null || questoes.isEmpty()) {
             questaoAtual = null;
             return;
         }
 
+        //Sorteia a dificuldade da próxima questão.
         Dificuldade dificuldadeSorteada = sortearDificuldadePermitida();
+        
+        //Busca a questão em si.
         Questao questaoSorteada = pegarProximaQuestaoDaDificuldade(dificuldadeSorteada);
 
         if (questaoSorteada == null) {
@@ -228,17 +233,21 @@ public class GerenciadorQuiz {
         }
 
         questaoAtual = questaoSorteada;
-
+        
+        //Guarda o ID da questão numa lista para manter um histórico das perguntas que já saíram nesta partida.
         if (questaoAtual != null) {
             idsQuestoesSorteadas.add(questaoAtual.getId());
         }
     }
 
     private Questao pegarProximaQuestaoDaDificuldade(Dificuldade dificuldade) {
+
+        //Se o jogador não permitiu essa dificuldade no menu inicial, aborta e retorna null.
         if (!dificuldadePermitida(dificuldade)) {
             return null;
         }
 
+        //Pega a lista de questões correspondente àquela dificuldade.
         List<Questao> lista = questoesPorDificuldade.get(dificuldade);
 
         if (lista == null || lista.isEmpty()) {

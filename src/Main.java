@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Scanner;
 
 public class Main {
+    
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
@@ -23,11 +24,13 @@ public class Main {
         }
 
         List<Dificuldade> dificuldadesPermitidas = escolherDificuldades(scanner);
+        List<String> categoriasPermitidas = escolherCategorias(scanner, questoes);
 
         GerenciadorQuiz gerenciador = new GerenciadorQuiz(
             questoes,
             usuario,
-            dificuldadesPermitidas
+            dificuldadesPermitidas,
+            categoriasPermitidas
         );
 
         System.out.println("=== Quiz infinito ===");
@@ -67,7 +70,7 @@ public class Main {
         QuestaoParser parser = new QuestaoParser();
 
         try {
-            return parser.carregarQuestoes("testequestoes.txt");
+            return parser.carregarQuestoes("resources/testequestoes.txt");
         } catch (IOException e) {
             System.out.println("Nao foi possivel carregar o arquivo de questoes.");
             System.out.println(e.getMessage());
@@ -112,5 +115,57 @@ public class Main {
 
         System.out.println();
         return dificuldadesPermitidas;
+    }
+
+    private static List<String> escolherCategorias(Scanner scanner, List<Questao> questoes) {
+        // Descobre todas as categorias únicas presentes nas questões carregadas
+        List<String> categoriasDisponiveis = new ArrayList<>();
+        for (Questao q : questoes) {
+            if (!categoriasDisponiveis.contains(q.getAssunto())) {
+                categoriasDisponiveis.add(q.getAssunto());
+            }
+        }
+
+        System.out.println("\n=== Selecao de Categorias ===");
+        System.out.println("Digite os numeros das categorias que deseja incluir separando por espaco.");
+        System.out.println("Exemplo: 1 3 para incluir apenas as categorias 1 e 3.");
+        
+        for (int i = 0; i < categoriasDisponiveis.size(); i++) {
+            System.out.println((i + 1) + " - " + categoriasDisponiveis.get(i));
+        }
+        int opcaoTodas = categoriasDisponiveis.size() + 1;
+        System.out.println(opcaoTodas + " - Todas as categorias");
+        System.out.print("Opcao: ");
+
+        String escolha = scanner.nextLine();
+        
+        // Se escolheu "Todas" ou deixou em branco, retorna a lista completa
+        if (escolha.contains(String.valueOf(opcaoTodas)) || escolha.trim().isEmpty()) {
+            return categoriasDisponiveis;
+        }
+
+        List<String> categoriasSelecionadas = new ArrayList<>();
+        String[] partes = escolha.split("\\s+"); // Separa por espaços
+        
+        for (String parte : partes) {
+            try {
+                int indice = Integer.parseInt(parte) - 1;
+                if (indice >= 0 && indice < categoriasDisponiveis.size()) {
+                    String cat = categoriasDisponiveis.get(indice);
+                    if (!categoriasSelecionadas.contains(cat)) {
+                        categoriasSelecionadas.add(cat);
+                    }
+                }
+            } catch (NumberFormatException e) {
+                // Ignora caso o usuário digite alguma letra inválida
+            }
+        }
+
+        if (categoriasSelecionadas.isEmpty()) {
+            System.out.println("Nenhuma categoria valida selecionada. Jogando com todas.");
+            return categoriasDisponiveis;
+        }
+
+        return categoriasSelecionadas;
     }
 }

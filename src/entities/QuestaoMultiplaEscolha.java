@@ -14,6 +14,18 @@ public class QuestaoMultiplaEscolha extends Questao {
         this.alternativas = new ArrayList<>();
     }
 
+    //Getters e Setters:
+
+    public List<Alternativa> getAlternativas() {
+        return alternativas;
+    }
+
+    public void setAlternativas(List<Alternativa> alternativas) {
+        this.alternativas = alternativas;
+    }
+
+    //Funções:
+
     @Override
     public boolean verificarResposta(String respostaDoUsuario) {
         for(Alternativa alternativa : alternativas) {

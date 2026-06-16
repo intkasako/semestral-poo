@@ -24,8 +24,9 @@ public class GerenciadorQuiz {
     private Integer pontuacaoPartida;
     private List<Dificuldade> dificuldadesPermitidas;
     private List<Integer> idsQuestoesSorteadas;
+    private List<String> categoriasPermitidas;
 
-    public GerenciadorQuiz(List<Questao> questoes, Usuario usuarioAtual, List<Dificuldade> dificuldadesPermitidas) {
+    public GerenciadorQuiz(List<Questao> questoes, Usuario usuarioAtual, List<Dificuldade> dificuldadesPermitidas, List<String> categoriasPermitidas) {
         this.questoes = questoes;
         this.questoesPorDificuldade = new EnumMap<>(Dificuldade.class);
         this.indicesPorDificuldade = new EnumMap<>(Dificuldade.class);
@@ -37,6 +38,7 @@ public class GerenciadorQuiz {
         this.pontuacaoPartida = 0;
         this.dificuldadesPermitidas = dificuldadesPermitidas;
         this.idsQuestoesSorteadas = new ArrayList<>();
+        this.categoriasPermitidas = categoriasPermitidas;
 
         organizarQuestoesPorDificuldade();
         sortearProximaQuestao();
@@ -120,6 +122,15 @@ public class GerenciadorQuiz {
         return getIdsQuestoesSorteadas();
     }
 
+    public List<String> getCategoriasPermitidas() {
+        return categoriasPermitidas;
+    }
+
+    public void setCategoriasPermitidas(List<String> categoriasPermitidas) {
+        this.categoriasPermitidas = categoriasPermitidas;
+        sortearProximaQuestao();
+    }
+
     // Funcoes:
 
     public Integer getPontuacaoAtual() {
@@ -131,26 +142,28 @@ public class GerenciadorQuiz {
     }
 
     private void organizarQuestoesPorDificuldade() {
-        questoesPorDificuldade.clear();
-        indicesPorDificuldade.clear();
+    questoesPorDificuldade.clear();
+    indicesPorDificuldade.clear();
 
-        for (Dificuldade dificuldade : Dificuldade.values()) {
-            questoesPorDificuldade.put(dificuldade, new ArrayList<>());
-            indicesPorDificuldade.put(dificuldade, 0);
-        }
+    for (Dificuldade dificuldade : Dificuldade.values()) {
+        questoesPorDificuldade.put(dificuldade, new ArrayList<>());
+        indicesPorDificuldade.put(dificuldade, 0);
+    }
 
-        if (questoes == null) {
-            return;
-        }
+    if (questoes == null) {
+        return;
+    }
 
-        for (Questao questao : questoes) {
+    for (Questao questao : questoes) {
+        if (categoriaPermitida(questao.getAssunto())) { //Se a categoria da questão for permitida, ela pegará as questões por dificuldade.
             questoesPorDificuldade.get(questao.getDificuldade()).add(questao);
         }
-
-        for (List<Questao> lista : questoesPorDificuldade.values()) {
-            Collections.shuffle(lista, random);
-        }
     }
+
+    for (List<Questao> lista : questoesPorDificuldade.values()) {
+        Collections.shuffle(lista, random);
+    }
+}
 
     private Dificuldade sortearDificuldadePorProgresso() {
         if (acertos < 5) {
@@ -265,6 +278,10 @@ public class GerenciadorQuiz {
 
     private boolean dificuldadePermitida(Dificuldade dificuldade) {
         return dificuldadesPermitidas == null || dificuldadesPermitidas.isEmpty() || dificuldadesPermitidas.contains(dificuldade);
+    }
+
+    private boolean categoriaPermitida(String categoria) {
+        return categoriasPermitidas == null || categoriasPermitidas.isEmpty() || categoriasPermitidas.contains(categoria);
     }
 
     public boolean responder(String respostaDoUsuario) {

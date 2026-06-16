@@ -4,7 +4,7 @@
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Video Games",
+      "category": "Entretenimento: Videogames",
       "question": "Em Super Mario RPG: Legend of The Seven Stars, qual é o nome verdadeiro de Geno?",
       "correct_answer": "♡♪!?",
       "incorrect_answers": [
@@ -16,17 +16,17 @@
     {
       "type": "boolean",
       "difficulty": "easy",
-      "category": "Entertainment: Video Games",
+      "category": "Entretenimento: Videogames",
       "question": "O jogo 'Jetpack Joyride' foi criado pela 'Redbrick Studios'.",
-      "correct_answer": "False",
+      "correct_answer": "Falso",
       "incorrect_answers": [
-        "True"
+        "Verdadeiro"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Geography",
+      "category": "Geografia",
       "question": "Em qual parte do País de Gales fica a vila Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
       "correct_answer": "Anglesey",
       "incorrect_answers": [
@@ -38,7 +38,7 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Entertainment: Video Games",
+      "category": "Entretenimento: Videogames",
       "question": "Qual filme de terror teve uma sequência na forma de videogame lançado em 20 de agosto de 2002?",
       "correct_answer": "A Coisa",
       "incorrect_answers": [
@@ -50,7 +50,7 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Science: Computers",
+      "category": "Ciências: Informática",
       "question": "Enquanto a Apple foi fundada na Califórnia, em qual estado do oeste dos EUA a Microsoft foi fundada?",
       "correct_answer": "Novo México",
       "incorrect_answers": [
@@ -62,7 +62,7 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "Entertainment: Video Games",
+      "category": "Entretenimento: Videogames",
       "question": "Em World of Warcraft, qual é a cor padrão da interface que representa o Druida?",
       "correct_answer": "Laranja",
       "incorrect_answers": [
@@ -74,7 +74,7 @@
     {
       "type": "multiple",
       "difficulty": "easy",
-      "category": "General Knowledge",
+      "category": "Conhecimentos Gerais",
       "question": "Qual signo do zodíaco é representado por uma balança?",
       "correct_answer": "Libra",
       "incorrect_answers": [
@@ -86,17 +86,17 @@
     {
       "type": "boolean",
       "difficulty": "medium",
-      "category": "General Knowledge",
+      "category": "Conhecimentos Gerais",
       "question": "A pipoca foi inventada em 1871 por Frederick W. Rueckheim nos EUA, onde ele vendia o lanche nas ruas de Chicago.",
-      "correct_answer": "False",
+      "correct_answer": "Falso",
       "incorrect_answers": [
-        "True"
+        "Verdadeiro"
       ]
     },
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "Geography",
+      "category": "Geografia",
       "question": "Qual trecho de água conecta o Oceano Atlântico ao Mar Mediterrâneo?",
       "correct_answer": "Estreito de Gibraltar",
       "incorrect_answers": [
@@ -108,7 +108,7 @@
     {
       "type": "multiple",
       "difficulty": "medium",
-      "category": "History",
+      "category": "História",
       "question": "A Guerra dos Trinta Anos terminou com qual tratado?",
       "correct_answer": "Paz de Vestfália",
       "incorrect_answers": [
@@ -120,8 +120,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Board Games",
-        "question": "When Magic: The Gathering was first solicited, which of the following was it originally titled?",
+        "category": "Entretenimento: Jogos de Tabuleiro",
+        "question": "Quando Magic: The Gathering foi apresentado pela primeira vez ao mercado, qual era o título original do jogo?",
         "correct_answer": "Mana Clash",
         "incorrect_answers": [
             "Magic",
@@ -132,32 +132,32 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "General Knowledge",
-        "question": "Roughly how many ingested apple seeds would it take to receive a fatal dose of cyanide?",
+        "category": "Conhecimentos Gerais",
+        "question": "Aproximadamente quantas sementes de maçã ingeridas seriam necessárias para receber uma dose fatal de cianeto?",
         "correct_answer": "200",
         "incorrect_answers": [
             "20",
-            "2,000",
-            "20,000"
+            "2.000",
+            "20.000"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual brinquedo mais vendido de 1983 causou histeria, resultando em tumultos nas lojas?",
         "correct_answer": "Cabbage Patch Kids",
         "incorrect_answers": [
             "Transformers",
             "Care Bears",
-            "Rubik&rsquo;s Cube"
+            "Cubo de Rubik"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Politics",
-        "question": "Whose 2016 presidential campaign slogan was &quot;Make America Great Again&quot;?",
+        "category": "Política",
+        "question": "De quem foi o slogan de campanha presidencial de 2016 \"Make America Great Again\"?",
         "correct_answer": "Donald Trump",
         "incorrect_answers": [
             "Ted Cruz",
@@ -168,32 +168,32 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "In &quot;Highschool DxD&quot;, Koneko Toujou is from what race?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Em \"Highschool DxD\", Koneko Toujou é de qual raça?",
         "correct_answer": "Nekomata",
         "incorrect_answers": [
             "Kitsune",
-            "Human",
+            "Humana",
             "Kappa"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Board Games",
-        "question": "In Dungeons and Dragons (5th edition), what stat do you normally add onto your initiative die roll?",
-        "correct_answer": "Dexterity",
+        "category": "Entretenimento: Jogos de Tabuleiro",
+        "question": "Em Dungeons and Dragons (5ª edição), qual atributo você normalmente adiciona à sua rolagem de dado de iniciativa?",
+        "correct_answer": "Destreza",
         "incorrect_answers": [
-            "Speed",
-            "Strength",
-            "Wisdom"
+            "Velocidade",
+            "Força",
+            "Sabedoria"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Music",
-        "question": "Iconic cartoon character Mickey Mouse made his onscreen debut in what year?",
+        "category": "Entretenimento: Música",
+        "question": "Em que ano o icônico personagem de desenho animado Mickey Mouse fez sua estreia nas telas?",
         "correct_answer": "1928",
         "incorrect_answers": [
             "1929",
@@ -204,20 +204,20 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Science &amp; Nature",
-        "question": "What produces the green colour of most plant leaves?",
-        "correct_answer": "Chlorophyll",
+        "category": "Ciências e Natureza",
+        "question": "O que produz a cor verde da maioria das folhas das plantas?",
+        "correct_answer": "Clorofila",
         "incorrect_answers": [
-            "Light refraction",
-            "Natural pigments",
-            "UV radiation"
+            "Refração da luz",
+            "Pigmentos naturais",
+            "Radiação UV"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "Which person from &quot;JoJo&#039;s Bizarre Adventure&quot; does NOT house a reference to a band, artist, or song earlier than 1980?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Qual personagem de \"JoJo's Bizarre Adventure\" NÃO possui uma referência a uma banda, artista ou música anterior a 1980?",
         "correct_answer": "Giorno Giovanna",
         "incorrect_answers": [
             "Josuke Higashikata",
@@ -228,8 +228,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Books",
-        "question": "What&#039;s Harry Potter&#039;s dad&#039;s name?",
+        "category": "Entretenimento: Livros",
+        "question": "Qual é o nome do pai de Harry Potter?",
         "correct_answer": "James Potter",
         "incorrect_answers": [
             "Joey Potter",
@@ -240,52 +240,52 @@
     {
         "type": "boolean",
         "difficulty": "medium",
-        "category": "Science: Computers",
-        "question": "The ARM computer chip was originally developed by Acorn Computers.",
-        "correct_answer": "True",
+        "category": "Ciências: Informática",
+        "question": "O chip de computador ARM foi desenvolvido originalmente pela Acorn Computers.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Television",
-        "question": "Who sang the theme song for the TV show &#039;Rawhide&#039;?",
+        "category": "Entretenimento: Televisão",
+        "question": "Quem cantou a música tema do programa de TV 'Rawhide'?",
         "correct_answer": "Frankie Laine",
         "incorrect_answers": [
             "Guy Mitchell",
-            " Tennessee Ernie Ford",
+            "Tennessee Ernie Ford",
             "Slim Whitman"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Geography",
-        "question": "The Pyrenees mountains are located on the border of which two countries?",
-        "correct_answer": "France and Spain",
+        "category": "Geografia",
+        "question": "A cordilheira dos Pireneus está localizada na fronteira de quais dois países?",
+        "correct_answer": "França e Espanha",
         "incorrect_answers": [
-            "Italy and Switzerland",
-            "Norway and Sweden",
-            "Russia and Ukraine"
+            "Itália e Suíça",
+            "Noruega e Suécia",
+            "Rússia e Ucrânia"
         ]
     },
     {
         "type": "boolean",
         "difficulty": "hard",
-        "category": "General Knowledge",
-        "question": "&quot;Number 16 Bus Shelter&quot; was a child&#039;s name that was approved by the New Zealand government.",
-        "correct_answer": "True",
+        "category": "Conhecimentos Gerais",
+        "question": "\"Number 16 Bus Shelter\" foi um nome de criança aprovado pelo governo da Nova Zelândia.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": " What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947, and is still popularly used today?",
+        "category": "História",
+        "question": "Qual fuzil de assalto automático russo a gás foi desenvolvido na União Soviética em 1947 e ainda é muito utilizado hoje?",
         "correct_answer": "AK-47",
         "incorrect_answers": [
             "RPK",
@@ -296,8 +296,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Music",
-        "question": "What was the last Aphex Twin album released before his decade-long hiatus?",
+        "category": "Entretenimento: Música",
+        "question": "Qual foi o último álbum do Aphex Twin lançado antes de seu hiato de uma década?",
         "correct_answer": "Drukqs",
         "incorrect_answers": [
             "Windowlicker",
@@ -308,8 +308,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "Who was the Author of the manga Monster Hunter Orage?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Quem foi o autor do mangá Monster Hunter Orage?",
         "correct_answer": "Hiro Mashima",
         "incorrect_answers": [
             "Shin Yamamoto",
@@ -320,28 +320,28 @@
     {
         "type": "boolean",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "In Team Fortress 2, the weapon &quot;Your Eternal Reward&quot; is a reference to the 1992 film Aladdin.",
-        "correct_answer": "True",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Team Fortress 2, a arma \"Your Eternal Reward\" é uma referência ao filme Aladdin de 1992.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "boolean",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "In Until Dawn, both characters Sam and Mike cannot be killed under any means until the final chapter of the game.",
-        "correct_answer": "True",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Until Dawn, os personagens Sam e Mike não podem ser mortos de forma alguma até o capítulo final do jogo.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In the Super Mario Bros. series, what game is the  &quot;Carrot&quot; power-up from?",
+        "category": "Entretenimento: Videogames",
+        "question": "Na série Super Mario Bros., de qual jogo é o power-up \"Cenoura\"?",
         "correct_answer": "Super Mario Land 2: The 6 Golden Coins",
         "incorrect_answers": [
             "Super Mario World",
@@ -352,11 +352,11 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": "Who was the main developer of the Suez Canal?",
+        "category": "História",
+        "question": "Quem foi o principal responsável pelo desenvolvimento do Canal de Suez?",
         "correct_answer": "Ferdinand de Lesseps",
         "incorrect_answers": [
-            "Louis-Eug&egrave;ne Cavaignac",
+            "Louis-Eugène Cavaignac",
             "John Milton",
             "Johann Lukas von Hildebrandt"
         ]
@@ -364,8 +364,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "Which of the following was a map that was in Team Fortress 2 at launch?",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual dos seguintes mapas estava presente em Team Fortress 2 no lançamento?",
         "correct_answer": "Gravel Pit",
         "incorrect_answers": [
             "Hoodoo",
@@ -376,8 +376,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Music",
-        "question": "Who is the lead singer of Pearl Jam?",
+        "category": "Entretenimento: Música",
+        "question": "Quem é o vocalista principal do Pearl Jam?",
         "correct_answer": "Eddie Vedder",
         "incorrect_answers": [
             "Ozzy Osbourne",
@@ -388,8 +388,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Video Games",
-        "question": "Which was the first M-rated video game developed by Squaresoft\/Square Enix?",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual foi o primeiro videogame com classificação M desenvolvido pela Squaresoft/Square Enix?",
         "correct_answer": "Parasite Eve",
         "incorrect_answers": [
             "Final Fantasy VIII",
@@ -400,8 +400,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "What is the full meaning of RAM?",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual é o significado completo da sigla RAM?",
         "correct_answer": "Random Access Memory",
         "incorrect_answers": [
             "Random Assist Memory",
@@ -412,8 +412,8 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "Krusty is the guild master of which guild in &quot;Log Horizon&quot;?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Krusty é o mestre de qual guilda em \"Log Horizon\"?",
         "correct_answer": "D. D. D",
         "incorrect_answers": [
             "Silver Sword",
@@ -424,20 +424,20 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "General Knowledge",
-        "question": "Located in Chile, El Teniente is the world&#039;s largest underground mine for what metal?",
-        "correct_answer": "Copper",
+        "category": "Conhecimentos Gerais",
+        "question": "Localizada no Chile, El Teniente é a maior mina subterrânea do mundo para qual metal?",
+        "correct_answer": "Cobre",
         "incorrect_answers": [
-            "Iron",
-            "Nickel",
-            "Silver"
+            "Ferro",
+            "Níquel",
+            "Prata"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Sports",
-        "question": "When was the first official international game played?",
+        "category": "Esportes",
+        "question": "Em que ano foi disputado o primeiro jogo internacional oficial?",
         "correct_answer": "1872",
         "incorrect_answers": [
             "1880",
@@ -448,20 +448,20 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Science &amp; Nature",
-        "question": "How many planets are in our Solar System?",
-        "correct_answer": "Eight",
+        "category": "Ciências e Natureza",
+        "question": "Quantos planetas existem em nosso Sistema Solar?",
+        "correct_answer": "Oito",
         "incorrect_answers": [
-            "Nine",
-            "Seven",
-            "Ten"
+            "Nove",
+            "Sete",
+            "Dez"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Film",
-        "question": "Who played Thanos in Avengers: Infinity War and Avengers: End Game?",
+        "category": "Entretenimento: Cinema",
+        "question": "Quem interpretou o Thanos em Avengers: Infinity War e Avengers: Endgame?",
         "correct_answer": "Josh Brolin",
         "incorrect_answers": [
             "Tom Hiddleston",
@@ -472,8 +472,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "Who created the &quot;Metal Gear&quot; Series?",
+        "category": "Entretenimento: Videogames",
+        "question": "Quem criou a série \"Metal Gear\"?",
         "correct_answer": "Hideo Kojima",
         "incorrect_answers": [
             "Hiroshi Yamauchi",
@@ -484,8 +484,8 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Comics",
-        "question": "In Calvin and Hobbes, what is the name of the babysitter&#039;s boyfriend?",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "Em Calvin and Hobbes, qual é o nome do namorado da babá?",
         "correct_answer": "Charlie",
         "incorrect_answers": [
             "Dave",
@@ -496,8 +496,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Television",
-        "question": "In the show &#039;Doctor Who&#039;, what is the name of the time-capsule model stolen by &#039;the Doctor&#039;?",
+        "category": "Entretenimento: Televisão",
+        "question": "Na série 'Doctor Who', qual é o nome do modelo de cápsula do tempo roubado por 'o Doutor'?",
         "correct_answer": "TT Type 40, Mark 3 (TARDIS)",
         "incorrect_answers": [
             "TT Type 1, Mark 3 (TARDIS)",
@@ -508,20 +508,20 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": "In World War I, what was the name of the alliance of Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria?",
-        "correct_answer": "The Central Powers",
+        "category": "História",
+        "question": "Na Primeira Guerra Mundial, qual era o nome da aliança formada por Alemanha, Áustria-Hungria, Império Otomano e Bulgária?",
+        "correct_answer": "As Potências Centrais",
         "incorrect_answers": [
-            "The Axis Powers",
-            "The Federation of Empires",
-            "Authoritarian Alliance"
+            "As Potências do Eixo",
+            "A Federação dos Impérios",
+            "Aliança Autoritária"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Television",
-        "question": "How long was Ken Jennings&#039; win streak on Jeopardy?",
+        "category": "Entretenimento: Televisão",
+        "question": "Por quantos episódios durou a sequência de vitórias de Ken Jennings no Jeopardy?",
         "correct_answer": "74",
         "incorrect_answers": [
             "88",
@@ -532,20 +532,20 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "General Knowledge",
-        "question": "What is a &quot;dakimakura&quot;?",
-        "correct_answer": "A body pillow",
+        "category": "Conhecimentos Gerais",
+        "question": "O que é uma \"dakimakura\"?",
+        "correct_answer": "Um travesseiro de corpo",
         "incorrect_answers": [
-            "A Chinese meal, essentially composed of fish",
-            "A yoga posture",
-            "A word used to describe two people who truly love each other"
+            "Uma refeição chinesa composta essencialmente de peixe",
+            "Uma postura de ioga",
+            "Uma palavra usada para descrever duas pessoas que verdadeiramente se amam"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": "Which of these founding fathers of the United States of America later became president?",
+        "category": "História",
+        "question": "Qual desses Pais Fundadores dos Estados Unidos da América se tornou presidente posteriormente?",
         "correct_answer": "James Monroe",
         "incorrect_answers": [
             "Alexander Hamilton",
@@ -556,35 +556,35 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Geography",
-        "question": "What is the capital of Jamaica?",
+        "category": "Geografia",
+        "question": "Qual é a capital da Jamaica?",
         "correct_answer": "Kingston",
         "incorrect_answers": [
             "San Juan",
-            "Port-au-Prince",
+            "Porto Príncipe",
             "Bridgetown"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Science &amp; Nature",
-        "question": "What part of the brain takes its name from the Greek for seahorse?",
-        "correct_answer": "Hippocampus",
+        "category": "Ciências e Natureza",
+        "question": "Qual parte do cérebro tem seu nome derivado do grego para 'cavalo-marinho'?",
+        "correct_answer": "Hipocampo",
         "incorrect_answers": [
-            "Cerebellum",
-            "Thalamus",
-            "Amygdala"
+            "Cerebelo",
+            "Tálamo",
+            "Amígdala"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Comics",
-        "question": "Found in the Marvel Comics fictional universe, what is the name of the nearly indestructible metal that coats Wolverine&#039;s bones and claws?",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "No universo fictício da Marvel Comics, qual é o nome do metal quase indestrutível que reveste os ossos e garras do Wolverine?",
         "correct_answer": "Adamantium",
         "incorrect_answers": [
-            "Titanium",
+            "Titânio",
             "Vibranium",
             "Carbonadium"
         ]
@@ -592,44 +592,44 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Books",
-        "question": "Which of the following is not a work authored by Fyodor Dostoevsky?",
+        "category": "Entretenimento: Livros",
+        "question": "Qual das seguintes obras NÃO foi escrita por Fyodor Dostoevsky?",
         "correct_answer": "Anna Karenina",
         "incorrect_answers": [
-            "Notes from the Underground",
-            "Crime and Punishment",
-            "The Brothers Karamazov"
+            "Memórias do Subsolo",
+            "Crime e Castigo",
+            "Os Irmãos Karamazov"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "General Knowledge",
-        "question": "What was Mountain Dew&#039;s original slogan?",
-        "correct_answer": "Yahoo! Mountain Dew... It&#039;ll tickle your innards!",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual era o slogan original do Mountain Dew?",
+        "correct_answer": "Yahoo! Mountain Dew... It'll tickle your innards!",
         "incorrect_answers": [
             "Give Me A Dew",
             "Do The Dew",
-            "Get&#039; that barefoot feelin&#039; drinkin&#039; Mountain Dew"
+            "Get' that barefoot feelin' drinkin' Mountain Dew"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Television",
-        "question": "At which university do &quot;The Big Bang Theory&quot; characters Mr. Wolowitz and Drs. Cooper, Hofstadter and Koothrappali work?",
+        "category": "Entretenimento: Televisão",
+        "question": "Em qual universidade trabalham os personagens de \"The Big Bang Theory\": Sr. Wolowitz e os Drs. Cooper, Hofstadter e Koothrappali?",
         "correct_answer": "Caltech",
         "incorrect_answers": [
             "UCLA",
             "MIT",
-            "UC Berkeley "
+            "UC Berkeley"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "History",
-        "question": "What year did World War I begin?",
+        "category": "História",
+        "question": "Em que ano começou a Primeira Guerra Mundial?",
         "correct_answer": "1914",
         "incorrect_answers": [
             "1905",
@@ -640,9 +640,9 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Film",
-        "question": "In the 2012 film, &quot;The Lorax&quot;, who is the antagonist?",
-        "correct_answer": "Aloysius O&#039;Hare",
+        "category": "Entretenimento: Cinema",
+        "question": "No filme de 2012 \"The Lorax\", quem é o antagonista?",
+        "correct_answer": "Aloysius O'Hare",
         "incorrect_answers": [
             "Ted Wiggins",
             "The Once-Ler",
@@ -652,8 +652,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Animals",
-        "question": "What do you call a baby bat?",
+        "category": "Animais",
+        "question": "Como se chama o filhote de morcego?",
         "correct_answer": "Pup",
         "incorrect_answers": [
             "Cub",
@@ -664,8 +664,8 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In the game Minecraft, how many iron ingots are required to make an iron golem?",
+        "category": "Entretenimento: Videogames",
+        "question": "No jogo Minecraft, quantos lingotes de ferro são necessários para criar um golem de ferro?",
         "correct_answer": "36",
         "incorrect_answers": [
             "40",
@@ -676,32 +676,32 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "Before it&#039;s redesign of the company logo in the year 2000, which 3D shape is NOT represented in the Electronic Arts logo?",
-        "correct_answer": "Cylinder",
+        "category": "Entretenimento: Videogames",
+        "question": "Antes da reformulação do logotipo da empresa no ano 2000, qual forma 3D NÃO estava representada no logotipo da Electronic Arts?",
+        "correct_answer": "Cilindro",
         "incorrect_answers": [
-            "Pyramid",
-            "Cube",
-            "Sphere"
+            "Pirâmide",
+            "Cubo",
+            "Esfera"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Geography",
-        "question": "Broome is a town in which state of Australia?",
-        "correct_answer": "Western Australia",
+        "category": "Geografia",
+        "question": "Broome é uma cidade em qual estado da Austrália?",
+        "correct_answer": "Austrália Ocidental",
         "incorrect_answers": [
-            "Northern Territory",
-            "South Australia",
-            "Tasmania"
+            "Território do Norte",
+            "Austrália do Sul",
+            "Tasmânia"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Science: Gadgets",
-        "question": "When was the compact disc player first released?",
+        "category": "Ciências: Tecnologia e Gadgets",
+        "question": "Quando o player de compact disc foi lançado pela primeira vez?",
         "correct_answer": "1982",
         "incorrect_answers": [
             "1983",
@@ -712,8 +712,8 @@
     {
       "type": "multiple",
       "difficulty": "hard",
-      "category": "Entertainment: Board Games",
-      "question": "When Magic: The Gathering was first solicited, which of the following was it originally titled?",
+      "category": "Entretenimento: Jogos de Tabuleiro",
+      "question": "Quando Magic: The Gathering foi apresentado pela primeira vez ao mercado, qual era o título original do jogo?",
       "correct_answer": "Mana Clash",
       "incorrect_answers": [
           "Magic",
@@ -724,32 +724,32 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "General Knowledge",
-        "question": "Roughly how many ingested apple seeds would it take to receive a fatal dose of cyanide?",
+        "category": "Conhecimentos Gerais",
+        "question": "Aproximadamente quantas sementes de maçã ingeridas seriam necessárias para receber uma dose fatal de cianeto?",
         "correct_answer": "200",
         "incorrect_answers": [
             "20",
-            "2,000",
-            "20,000"
+            "2.000",
+            "20.000"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "Which best selling toy of 1983 caused hysteria, resulting in riots breaking out in stores?",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual brinquedo mais vendido de 1983 causou histeria, resultando em tumultos nas lojas?",
         "correct_answer": "Cabbage Patch Kids",
         "incorrect_answers": [
             "Transformers",
             "Care Bears",
-            "Rubik&rsquo;s Cube"
+            "Cubo de Rubik"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Politics",
-        "question": "Whose 2016 presidential campaign slogan was &quot;Make America Great Again&quot;?",
+        "category": "Política",
+        "question": "De quem foi o slogan de campanha presidencial de 2016 \"Make America Great Again\"?",
         "correct_answer": "Donald Trump",
         "incorrect_answers": [
             "Ted Cruz",
@@ -760,32 +760,32 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "In &quot;Highschool DxD&quot;, Koneko Toujou is from what race?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Em \"Highschool DxD\", Koneko Toujou é de qual raça?",
         "correct_answer": "Nekomata",
         "incorrect_answers": [
             "Kitsune",
-            "Human",
+            "Humana",
             "Kappa"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Board Games",
-        "question": "In Dungeons and Dragons (5th edition), what stat do you normally add onto your initiative die roll?",
-        "correct_answer": "Dexterity",
+        "category": "Entretenimento: Jogos de Tabuleiro",
+        "question": "Em Dungeons and Dragons (5ª edição), qual atributo você normalmente adiciona à sua rolagem de dado de iniciativa?",
+        "correct_answer": "Destreza",
         "incorrect_answers": [
-            "Speed",
-            "Strength",
-            "Wisdom"
+            "Velocidade",
+            "Força",
+            "Sabedoria"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Music",
-        "question": "Iconic cartoon character Mickey Mouse made his onscreen debut in what year?",
+        "category": "Entretenimento: Música",
+        "question": "Em que ano o icônico personagem de desenho animado Mickey Mouse fez sua estreia nas telas?",
         "correct_answer": "1928",
         "incorrect_answers": [
             "1929",
@@ -796,20 +796,20 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Science &amp; Nature",
-        "question": "What produces the green colour of most plant leaves?",
-        "correct_answer": "Chlorophyll",
+        "category": "Ciências e Natureza",
+        "question": "O que produz a cor verde da maioria das folhas das plantas?",
+        "correct_answer": "Clorofila",
         "incorrect_answers": [
-            "Light refraction",
-            "Natural pigments",
-            "UV radiation"
+            "Refração da luz",
+            "Pigmentos naturais",
+            "Radiação UV"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "Which person from &quot;JoJo&#039;s Bizarre Adventure&quot; does NOT house a reference to a band, artist, or song earlier than 1980?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Qual personagem de \"JoJo's Bizarre Adventure\" NÃO possui uma referência a uma banda, artista ou música anterior a 1980?",
         "correct_answer": "Giorno Giovanna",
         "incorrect_answers": [
             "Josuke Higashikata",
@@ -820,8 +820,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Books",
-        "question": "What&#039;s Harry Potter&#039;s dad&#039;s name?",
+        "category": "Entretenimento: Livros",
+        "question": "Qual é o nome do pai de Harry Potter?",
         "correct_answer": "James Potter",
         "incorrect_answers": [
             "Joey Potter",
@@ -832,52 +832,52 @@
     {
         "type": "boolean",
         "difficulty": "medium",
-        "category": "Science: Computers",
-        "question": "The ARM computer chip was originally developed by Acorn Computers.",
-        "correct_answer": "True",
+        "category": "Ciências: Informática",
+        "question": "O chip de computador ARM foi desenvolvido originalmente pela Acorn Computers.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Television",
-        "question": "Who sang the theme song for the TV show &#039;Rawhide&#039;?",
+        "category": "Entretenimento: Televisão",
+        "question": "Quem cantou a música tema do programa de TV 'Rawhide'?",
         "correct_answer": "Frankie Laine",
         "incorrect_answers": [
             "Guy Mitchell",
-            " Tennessee Ernie Ford",
+            "Tennessee Ernie Ford",
             "Slim Whitman"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Geography",
-        "question": "The Pyrenees mountains are located on the border of which two countries?",
-        "correct_answer": "France and Spain",
+        "category": "Geografia",
+        "question": "A cordilheira dos Pireneus está localizada na fronteira de quais dois países?",
+        "correct_answer": "França e Espanha",
         "incorrect_answers": [
-            "Italy and Switzerland",
-            "Norway and Sweden",
-            "Russia and Ukraine"
+            "Itália e Suíça",
+            "Noruega e Suécia",
+            "Rússia e Ucrânia"
         ]
     },
     {
         "type": "boolean",
         "difficulty": "hard",
-        "category": "General Knowledge",
-        "question": "&quot;Number 16 Bus Shelter&quot; was a child&#039;s name that was approved by the New Zealand government.",
-        "correct_answer": "True",
+        "category": "Conhecimentos Gerais",
+        "question": "\"Number 16 Bus Shelter\" foi um nome de criança aprovado pelo governo da Nova Zelândia.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": " What Russian automatic gas-operated assault rifle was developed in the Soviet Union in 1947, and is still popularly used today?",
+        "category": "História",
+        "question": "Qual fuzil de assalto automático russo a gás foi desenvolvido na União Soviética em 1947 e ainda é muito utilizado hoje?",
         "correct_answer": "AK-47",
         "incorrect_answers": [
             "RPK",
@@ -888,8 +888,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Music",
-        "question": "What was the last Aphex Twin album released before his decade-long hiatus?",
+        "category": "Entretenimento: Música",
+        "question": "Qual foi o último álbum do Aphex Twin lançado antes de seu hiato de uma década?",
         "correct_answer": "Drukqs",
         "incorrect_answers": [
             "Windowlicker",
@@ -900,8 +900,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "Who was the Author of the manga Monster Hunter Orage?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Quem foi o autor do mangá Monster Hunter Orage?",
         "correct_answer": "Hiro Mashima",
         "incorrect_answers": [
             "Shin Yamamoto",
@@ -912,28 +912,28 @@
     {
         "type": "boolean",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "In Team Fortress 2, the weapon &quot;Your Eternal Reward&quot; is a reference to the 1992 film Aladdin.",
-        "correct_answer": "True",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Team Fortress 2, a arma \"Your Eternal Reward\" é uma referência ao filme Aladdin de 1992.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "boolean",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "In Until Dawn, both characters Sam and Mike cannot be killed under any means until the final chapter of the game.",
-        "correct_answer": "True",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Until Dawn, os personagens Sam e Mike não podem ser mortos de forma alguma até o capítulo final do jogo.",
+        "correct_answer": "Verdadeiro",
         "incorrect_answers": [
-            "False"
+            "Falso"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In the Super Mario Bros. series, what game is the  &quot;Carrot&quot; power-up from?",
+        "category": "Entretenimento: Videogames",
+        "question": "Na série Super Mario Bros., de qual jogo é o power-up \"Cenoura\"?",
         "correct_answer": "Super Mario Land 2: The 6 Golden Coins",
         "incorrect_answers": [
             "Super Mario World",
@@ -944,11 +944,11 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": "Who was the main developer of the Suez Canal?",
+        "category": "História",
+        "question": "Quem foi o principal responsável pelo desenvolvimento do Canal de Suez?",
         "correct_answer": "Ferdinand de Lesseps",
         "incorrect_answers": [
-            "Louis-Eug&egrave;ne Cavaignac",
+            "Louis-Eugène Cavaignac",
             "John Milton",
             "Johann Lukas von Hildebrandt"
         ]
@@ -956,8 +956,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "Which of the following was a map that was in Team Fortress 2 at launch?",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual dos seguintes mapas estava presente em Team Fortress 2 no lançamento?",
         "correct_answer": "Gravel Pit",
         "incorrect_answers": [
             "Hoodoo",
@@ -968,8 +968,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Music",
-        "question": "Who is the lead singer of Pearl Jam?",
+        "category": "Entretenimento: Música",
+        "question": "Quem é o vocalista principal do Pearl Jam?",
         "correct_answer": "Eddie Vedder",
         "incorrect_answers": [
             "Ozzy Osbourne",
@@ -980,8 +980,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Video Games",
-        "question": "Which was the first M-rated video game developed by Squaresoft\/Square Enix?",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual foi o primeiro videogame com classificação M desenvolvido pela Squaresoft/Square Enix?",
         "correct_answer": "Parasite Eve",
         "incorrect_answers": [
             "Final Fantasy VIII",
@@ -992,8 +992,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "General Knowledge",
-        "question": "What is the full meaning of RAM?",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual é o significado completo da sigla RAM?",
         "correct_answer": "Random Access Memory",
         "incorrect_answers": [
             "Random Assist Memory",
@@ -1004,8 +1004,8 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Japanese Anime &amp; Manga",
-        "question": "Krusty is the guild master of which guild in &quot;Log Horizon&quot;?",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Krusty é o mestre de qual guilda em \"Log Horizon\"?",
         "correct_answer": "D. D. D",
         "incorrect_answers": [
             "Silver Sword",
@@ -1016,20 +1016,20 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "General Knowledge",
-        "question": "Located in Chile, El Teniente is the world&#039;s largest underground mine for what metal?",
-        "correct_answer": "Copper",
+        "category": "Conhecimentos Gerais",
+        "question": "Localizada no Chile, El Teniente é a maior mina subterrânea do mundo para qual metal?",
+        "correct_answer": "Cobre",
         "incorrect_answers": [
-            "Iron",
-            "Nickel",
-            "Silver"
+            "Ferro",
+            "Níquel",
+            "Prata"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Sports",
-        "question": "When was the first official international game played?",
+        "category": "Esportes",
+        "question": "Em que ano foi disputado o primeiro jogo internacional oficial?",
         "correct_answer": "1872",
         "incorrect_answers": [
             "1880",
@@ -1040,20 +1040,20 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Science &amp; Nature",
-        "question": "How many planets are in our Solar System?",
-        "correct_answer": "Eight",
+        "category": "Ciências e Natureza",
+        "question": "Quantos planetas existem em nosso Sistema Solar?",
+        "correct_answer": "Oito",
         "incorrect_answers": [
-            "Nine",
-            "Seven",
-            "Ten"
+            "Nove",
+            "Sete",
+            "Dez"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Film",
-        "question": "Who played Thanos in Avengers: Infinity War and Avengers: End Game?",
+        "category": "Entretenimento: Cinema",
+        "question": "Quem interpretou o Thanos em Avengers: Infinity War e Avengers: Endgame?",
         "correct_answer": "Josh Brolin",
         "incorrect_answers": [
             "Tom Hiddleston",
@@ -1064,8 +1064,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "Who created the &quot;Metal Gear&quot; Series?",
+        "category": "Entretenimento: Videogames",
+        "question": "Quem criou a série \"Metal Gear\"?",
         "correct_answer": "Hideo Kojima",
         "incorrect_answers": [
             "Hiroshi Yamauchi",
@@ -1076,8 +1076,8 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Comics",
-        "question": "In Calvin and Hobbes, what is the name of the babysitter&#039;s boyfriend?",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "Em Calvin and Hobbes, qual é o nome do namorado da babá?",
         "correct_answer": "Charlie",
         "incorrect_answers": [
             "Dave",
@@ -1088,8 +1088,8 @@
     {
         "type": "multiple",
         "difficulty": "hard",
-        "category": "Entertainment: Television",
-        "question": "In the show &#039;Doctor Who&#039;, what is the name of the time-capsule model stolen by &#039;the Doctor&#039;?",
+        "category": "Entretenimento: Televisão",
+        "question": "Na série 'Doctor Who', qual é o nome do modelo de cápsula do tempo roubado por 'o Doutor'?",
         "correct_answer": "TT Type 40, Mark 3 (TARDIS)",
         "incorrect_answers": [
             "TT Type 1, Mark 3 (TARDIS)",
@@ -1100,20 +1100,20 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": "In World War I, what was the name of the alliance of Germany, Austria-Hungary, the Ottoman Empire, and Bulgaria?",
-        "correct_answer": "The Central Powers",
+        "category": "História",
+        "question": "Na Primeira Guerra Mundial, qual era o nome da aliança formada por Alemanha, Áustria-Hungria, Império Otomano e Bulgária?",
+        "correct_answer": "As Potências Centrais",
         "incorrect_answers": [
-            "The Axis Powers",
-            "The Federation of Empires",
-            "Authoritarian Alliance"
+            "As Potências do Eixo",
+            "A Federação dos Impérios",
+            "Aliança Autoritária"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Television",
-        "question": "How long was Ken Jennings&#039; win streak on Jeopardy?",
+        "category": "Entretenimento: Televisão",
+        "question": "Por quantos episódios durou a sequência de vitórias de Ken Jennings no Jeopardy?",
         "correct_answer": "74",
         "incorrect_answers": [
             "88",
@@ -1124,20 +1124,20 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "General Knowledge",
-        "question": "What is a &quot;dakimakura&quot;?",
-        "correct_answer": "A body pillow",
+        "category": "Conhecimentos Gerais",
+        "question": "O que é uma \"dakimakura\"?",
+        "correct_answer": "Um travesseiro de corpo",
         "incorrect_answers": [
-            "A Chinese meal, essentially composed of fish",
-            "A yoga posture",
-            "A word used to describe two people who truly love each other"
+            "Uma refeição chinesa composta essencialmente de peixe",
+            "Uma postura de ioga",
+            "Uma palavra usada para descrever duas pessoas que verdadeiramente se amam"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "History",
-        "question": "Which of these founding fathers of the United States of America later became president?",
+        "category": "História",
+        "question": "Qual desses Pais Fundadores dos Estados Unidos da América se tornou presidente posteriormente?",
         "correct_answer": "James Monroe",
         "incorrect_answers": [
             "Alexander Hamilton",
@@ -1148,35 +1148,35 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Geography",
-        "question": "What is the capital of Jamaica?",
+        "category": "Geografia",
+        "question": "Qual é a capital da Jamaica?",
         "correct_answer": "Kingston",
         "incorrect_answers": [
             "San Juan",
-            "Port-au-Prince",
+            "Porto Príncipe",
             "Bridgetown"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Science &amp; Nature",
-        "question": "What part of the brain takes its name from the Greek for seahorse?",
-        "correct_answer": "Hippocampus",
+        "category": "Ciências e Natureza",
+        "question": "Qual parte do cérebro tem seu nome derivado do grego para 'cavalo-marinho'?",
+        "correct_answer": "Hipocampo",
         "incorrect_answers": [
-            "Cerebellum",
-            "Thalamus",
-            "Amygdala"
+            "Cerebelo",
+            "Tálamo",
+            "Amígdala"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Comics",
-        "question": "Found in the Marvel Comics fictional universe, what is the name of the nearly indestructible metal that coats Wolverine&#039;s bones and claws?",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "No universo fictício da Marvel Comics, qual é o nome do metal quase indestrutível que reveste os ossos e garras do Wolverine?",
         "correct_answer": "Adamantium",
         "incorrect_answers": [
-            "Titanium",
+            "Titânio",
             "Vibranium",
             "Carbonadium"
         ]
@@ -1184,44 +1184,44 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Books",
-        "question": "Which of the following is not a work authored by Fyodor Dostoevsky?",
+        "category": "Entretenimento: Livros",
+        "question": "Qual das seguintes obras NÃO foi escrita por Fyodor Dostoevsky?",
         "correct_answer": "Anna Karenina",
         "incorrect_answers": [
-            "Notes from the Underground",
-            "Crime and Punishment",
-            "The Brothers Karamazov"
+            "Memórias do Subsolo",
+            "Crime e Castigo",
+            "Os Irmãos Karamazov"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "General Knowledge",
-        "question": "What was Mountain Dew&#039;s original slogan?",
-        "correct_answer": "Yahoo! Mountain Dew... It&#039;ll tickle your innards!",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual era o slogan original do Mountain Dew?",
+        "correct_answer": "Yahoo! Mountain Dew... It'll tickle your innards!",
         "incorrect_answers": [
             "Give Me A Dew",
             "Do The Dew",
-            "Get&#039; that barefoot feelin&#039; drinkin&#039; Mountain Dew"
+            "Get' that barefoot feelin' drinkin' Mountain Dew"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Television",
-        "question": "At which university do &quot;The Big Bang Theory&quot; characters Mr. Wolowitz and Drs. Cooper, Hofstadter and Koothrappali work?",
+        "category": "Entretenimento: Televisão",
+        "question": "Em qual universidade trabalham os personagens de \"The Big Bang Theory\": Sr. Wolowitz e os Drs. Cooper, Hofstadter e Koothrappali?",
         "correct_answer": "Caltech",
         "incorrect_answers": [
             "UCLA",
             "MIT",
-            "UC Berkeley "
+            "UC Berkeley"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "History",
-        "question": "What year did World War I begin?",
+        "category": "História",
+        "question": "Em que ano começou a Primeira Guerra Mundial?",
         "correct_answer": "1914",
         "incorrect_answers": [
             "1905",
@@ -1232,9 +1232,9 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Film",
-        "question": "In the 2012 film, &quot;The Lorax&quot;, who is the antagonist?",
-        "correct_answer": "Aloysius O&#039;Hare",
+        "category": "Entretenimento: Cinema",
+        "question": "No filme de 2012 \"The Lorax\", quem é o antagonista?",
+        "correct_answer": "Aloysius O'Hare",
         "incorrect_answers": [
             "Ted Wiggins",
             "The Once-Ler",
@@ -1244,8 +1244,8 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Animals",
-        "question": "What do you call a baby bat?",
+        "category": "Animais",
+        "question": "Como se chama o filhote de morcego?",
         "correct_answer": "Pup",
         "incorrect_answers": [
             "Cub",
@@ -1256,8 +1256,8 @@
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Entertainment: Video Games",
-        "question": "In the game Minecraft, how many iron ingots are required to make an iron golem?",
+        "category": "Entretenimento: Videogames",
+        "question": "No jogo Minecraft, quantos lingotes de ferro são necessários para criar um golem de ferro?",
         "correct_answer": "36",
         "incorrect_answers": [
             "40",
@@ -1268,32 +1268,32 @@
     {
         "type": "multiple",
         "difficulty": "easy",
-        "category": "Entertainment: Video Games",
-        "question": "Before it&#039;s redesign of the company logo in the year 2000, which 3D shape is NOT represented in the Electronic Arts logo?",
-        "correct_answer": "Cylinder",
+        "category": "Entretenimento: Videogames",
+        "question": "Antes da reformulação do logotipo da empresa no ano 2000, qual forma 3D NÃO estava representada no logotipo da Electronic Arts?",
+        "correct_answer": "Cilindro",
         "incorrect_answers": [
-            "Pyramid",
-            "Cube",
-            "Sphere"
+            "Pirâmide",
+            "Cubo",
+            "Esfera"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Geography",
-        "question": "Broome is a town in which state of Australia?",
-        "correct_answer": "Western Australia",
+        "category": "Geografia",
+        "question": "Broome é uma cidade em qual estado da Austrália?",
+        "correct_answer": "Austrália Ocidental",
         "incorrect_answers": [
-            "Northern Territory",
-            "South Australia",
-            "Tasmania"
+            "Território do Norte",
+            "Austrália do Sul",
+            "Tasmânia"
         ]
     },
     {
         "type": "multiple",
         "difficulty": "medium",
-        "category": "Science: Gadgets",
-        "question": "When was the compact disc player first released?",
+        "category": "Ciências: Tecnologia e Gadgets",
+        "question": "Quando o player de compact disc foi lançado pela primeira vez?",
         "correct_answer": "1982",
         "incorrect_answers": [
             "1983",
@@ -1303,4 +1303,3 @@
     }
   ]
 }
-

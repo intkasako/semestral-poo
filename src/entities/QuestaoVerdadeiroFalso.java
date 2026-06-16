@@ -13,7 +13,8 @@ public class QuestaoVerdadeiroFalso extends Questao{
 
     @Override
     public boolean verificarResposta(String respostaDoUsuario) {
-        return false;
+        String resposta = respostaDoUsuario.trim().toUpperCase();
+        return !resposta.isEmpty() && resposta.charAt(0) == Character.toUpperCase(respostaCorreta);
     }
 
 

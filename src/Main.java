@@ -17,7 +17,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        Usuario usuario = new Usuario(1, "Pedro", "pedro@email.com");
+        Usuario usuario = cadastrarUsuario(scanner);
         List<Questao> questoes = carregarQuestoes();
 
         if (questoes.isEmpty()) {
@@ -75,10 +75,43 @@ public class Main {
         }
 
         System.out.println("\nPontuacao final da partida: " + gerenciador.getPontuacaoAtual());
-        System.out.println("Pontuacao global do usuario: " + usuario.getPontuacao());
+        System.out.println("Pontuacao global de " + usuario.getNome() + ": " + usuario.getPontuacao());
         System.out.println("Total de acertos: " + gerenciador.getAcertos());
 
         scanner.close();
+    }
+
+    private static Usuario cadastrarUsuario(Scanner scanner) {
+        System.out.println("=============================");
+        System.out.println("   Bem-vindo ao POO Quiz!");
+        System.out.println("=============================");
+        System.out.println();
+
+        String nome = "";
+        while (nome.isEmpty()) {
+            System.out.print("Digite seu nome: ");
+            nome = scanner.nextLine().trim();
+            if (nome.isEmpty()) {
+                System.out.println("Nome nao pode ser vazio.");
+            }
+        }
+
+        String email = "";
+        while (email.isEmpty()) {
+            System.out.print("Digite seu e-mail: ");
+            email = scanner.nextLine().trim();
+            if (email.isEmpty()) {
+                System.out.println("E-mail nao pode ser vazio.");
+            }
+        }
+
+        System.out.println();
+        System.out.println("Cadastro realizado com sucesso!");
+        System.out.println("Jogador: " + nome);
+        System.out.println("E-mail: " + email);
+        System.out.println();
+
+        return new Usuario(1, nome, email);
     }
 
     private static List<Questao> carregarQuestoes() {

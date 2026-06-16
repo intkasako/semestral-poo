@@ -1,0 +1,1305 @@
+{
+  "response_code": 0,
+  "results": [
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entretenimento: Videogames",
+      "question": "Em Super Mario RPG: Legend of The Seven Stars, qual é o nome verdadeiro de Geno?",
+      "correct_answer": "♡♪!?",
+      "incorrect_answers": [
+        "Geno",
+        "Exor",
+        "Smithy"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "easy",
+      "category": "Entretenimento: Videogames",
+      "question": "O jogo 'Jetpack Joyride' foi criado pela 'Redbrick Studios'.",
+      "correct_answer": "Falso",
+      "incorrect_answers": [
+        "Verdadeiro"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Geografia",
+      "question": "Em qual parte do País de Gales fica a vila Llanfairpwllgwyngyllgogerychwyrndrobwllllantysiliogogogoch?",
+      "correct_answer": "Anglesey",
+      "incorrect_answers": [
+        "Pembrokeshire",
+        "Wrexham",
+        "Bridgend"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Entretenimento: Videogames",
+      "question": "Qual filme de terror teve uma sequência na forma de videogame lançado em 20 de agosto de 2002?",
+      "correct_answer": "A Coisa",
+      "incorrect_answers": [
+        "A Morte do Demônio",
+        "Jogos Mortais",
+        "Alien"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Ciências: Informática",
+      "question": "Enquanto a Apple foi fundada na Califórnia, em qual estado do oeste dos EUA a Microsoft foi fundada?",
+      "correct_answer": "Novo México",
+      "incorrect_answers": [
+        "Washington",
+        "Colorado",
+        "Arizona"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Entretenimento: Videogames",
+      "question": "Em World of Warcraft, qual é a cor padrão da interface que representa o Druida?",
+      "correct_answer": "Laranja",
+      "incorrect_answers": [
+        "Marrom",
+        "Verde",
+        "Azul"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "easy",
+      "category": "Conhecimentos Gerais",
+      "question": "Qual signo do zodíaco é representado por uma balança?",
+      "correct_answer": "Libra",
+      "incorrect_answers": [
+        "Áries",
+        "Capricórnio",
+        "Sagitário"
+      ]
+    },
+    {
+      "type": "boolean",
+      "difficulty": "medium",
+      "category": "Conhecimentos Gerais",
+      "question": "A pipoca foi inventada em 1871 por Frederick W. Rueckheim nos EUA, onde ele vendia o lanche nas ruas de Chicago.",
+      "correct_answer": "Falso",
+      "incorrect_answers": [
+        "Verdadeiro"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "Geografia",
+      "question": "Qual trecho de água conecta o Oceano Atlântico ao Mar Mediterrâneo?",
+      "correct_answer": "Estreito de Gibraltar",
+      "incorrect_answers": [
+        "Via Gibraltar",
+        "Estreitos Espanhóis",
+        "Canal de Tânger"
+      ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "medium",
+      "category": "História",
+      "question": "A Guerra dos Trinta Anos terminou com qual tratado?",
+      "correct_answer": "Paz de Vestfália",
+      "incorrect_answers": [
+        "Tratado de Versalhes",
+        "Tratado de Paris",
+        "Paz de Praga"
+      ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Jogos de Tabuleiro",
+        "question": "Quando Magic: The Gathering foi apresentado pela primeira vez ao mercado, qual era o título original do jogo?",
+        "correct_answer": "Mana Clash",
+        "incorrect_answers": [
+            "Magic",
+            "Magic Clash",
+            "Mana Duels"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Conhecimentos Gerais",
+        "question": "Aproximadamente quantas sementes de maçã ingeridas seriam necessárias para receber uma dose fatal de cianeto?",
+        "correct_answer": "200",
+        "incorrect_answers": [
+            "20",
+            "2.000",
+            "20.000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual brinquedo mais vendido de 1983 causou histeria, resultando em tumultos nas lojas?",
+        "correct_answer": "Cabbage Patch Kids",
+        "incorrect_answers": [
+            "Transformers",
+            "Care Bears",
+            "Cubo de Rubik"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Política",
+        "question": "De quem foi o slogan de campanha presidencial de 2016 \"Make America Great Again\"?",
+        "correct_answer": "Donald Trump",
+        "incorrect_answers": [
+            "Ted Cruz",
+            "Marco Rubio",
+            "Bernie Sanders"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Em \"Highschool DxD\", Koneko Toujou é de qual raça?",
+        "correct_answer": "Nekomata",
+        "incorrect_answers": [
+            "Kitsune",
+            "Humana",
+            "Kappa"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Jogos de Tabuleiro",
+        "question": "Em Dungeons and Dragons (5ª edição), qual atributo você normalmente adiciona à sua rolagem de dado de iniciativa?",
+        "correct_answer": "Destreza",
+        "incorrect_answers": [
+            "Velocidade",
+            "Força",
+            "Sabedoria"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Música",
+        "question": "Em que ano o icônico personagem de desenho animado Mickey Mouse fez sua estreia nas telas?",
+        "correct_answer": "1928",
+        "incorrect_answers": [
+            "1929",
+            "1922",
+            "1932"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Ciências e Natureza",
+        "question": "O que produz a cor verde da maioria das folhas das plantas?",
+        "correct_answer": "Clorofila",
+        "incorrect_answers": [
+            "Refração da luz",
+            "Pigmentos naturais",
+            "Radiação UV"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Qual personagem de \"JoJo's Bizarre Adventure\" NÃO possui uma referência a uma banda, artista ou música anterior a 1980?",
+        "correct_answer": "Giorno Giovanna",
+        "incorrect_answers": [
+            "Josuke Higashikata",
+            "Jolyne Cujoh",
+            "Johnny Joestar"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Livros",
+        "question": "Qual é o nome do pai de Harry Potter?",
+        "correct_answer": "James Potter",
+        "incorrect_answers": [
+            "Joey Potter",
+            "Frank Potter",
+            "Hairy Potter Sr."
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Ciências: Informática",
+        "question": "O chip de computador ARM foi desenvolvido originalmente pela Acorn Computers.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Televisão",
+        "question": "Quem cantou a música tema do programa de TV 'Rawhide'?",
+        "correct_answer": "Frankie Laine",
+        "incorrect_answers": [
+            "Guy Mitchell",
+            "Tennessee Ernie Ford",
+            "Slim Whitman"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Geografia",
+        "question": "A cordilheira dos Pireneus está localizada na fronteira de quais dois países?",
+        "correct_answer": "França e Espanha",
+        "incorrect_answers": [
+            "Itália e Suíça",
+            "Noruega e Suécia",
+            "Rússia e Ucrânia"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "Conhecimentos Gerais",
+        "question": "\"Number 16 Bus Shelter\" foi um nome de criança aprovado pelo governo da Nova Zelândia.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Qual fuzil de assalto automático russo a gás foi desenvolvido na União Soviética em 1947 e ainda é muito utilizado hoje?",
+        "correct_answer": "AK-47",
+        "incorrect_answers": [
+            "RPK",
+            "M16",
+            "MG 42"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Música",
+        "question": "Qual foi o último álbum do Aphex Twin lançado antes de seu hiato de uma década?",
+        "correct_answer": "Drukqs",
+        "incorrect_answers": [
+            "Windowlicker",
+            "Syro",
+            "Collected Ambient Works 85-92"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Quem foi o autor do mangá Monster Hunter Orage?",
+        "correct_answer": "Hiro Mashima",
+        "incorrect_answers": [
+            "Shin Yamamoto",
+            "Keiichi Hikami",
+            "Hirohiko Araki"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Team Fortress 2, a arma \"Your Eternal Reward\" é uma referência ao filme Aladdin de 1992.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Until Dawn, os personagens Sam e Mike não podem ser mortos de forma alguma até o capítulo final do jogo.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Videogames",
+        "question": "Na série Super Mario Bros., de qual jogo é o power-up \"Cenoura\"?",
+        "correct_answer": "Super Mario Land 2: The 6 Golden Coins",
+        "incorrect_answers": [
+            "Super Mario World",
+            "Super Mario Land",
+            "Super Mario 3D Land"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Quem foi o principal responsável pelo desenvolvimento do Canal de Suez?",
+        "correct_answer": "Ferdinand de Lesseps",
+        "incorrect_answers": [
+            "Louis-Eugène Cavaignac",
+            "John Milton",
+            "Johann Lukas von Hildebrandt"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual dos seguintes mapas estava presente em Team Fortress 2 no lançamento?",
+        "correct_answer": "Gravel Pit",
+        "incorrect_answers": [
+            "Hoodoo",
+            "Gold Rush",
+            "Upward"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Música",
+        "question": "Quem é o vocalista principal do Pearl Jam?",
+        "correct_answer": "Eddie Vedder",
+        "incorrect_answers": [
+            "Ozzy Osbourne",
+            "Stone Gossard",
+            "Kurt Cobain"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual foi o primeiro videogame com classificação M desenvolvido pela Squaresoft/Square Enix?",
+        "correct_answer": "Parasite Eve",
+        "incorrect_answers": [
+            "Final Fantasy VIII",
+            "Front Mission",
+            "Vagrant Story"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual é o significado completo da sigla RAM?",
+        "correct_answer": "Random Access Memory",
+        "incorrect_answers": [
+            "Random Assist Memory",
+            "Rand Assist Mandate",
+            "Ram"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Krusty é o mestre de qual guilda em \"Log Horizon\"?",
+        "correct_answer": "D. D. D",
+        "incorrect_answers": [
+            "Silver Sword",
+            "West Wind Brigade",
+            "Oceanic Systems (Marine Agency)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Conhecimentos Gerais",
+        "question": "Localizada no Chile, El Teniente é a maior mina subterrânea do mundo para qual metal?",
+        "correct_answer": "Cobre",
+        "incorrect_answers": [
+            "Ferro",
+            "Níquel",
+            "Prata"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Esportes",
+        "question": "Em que ano foi disputado o primeiro jogo internacional oficial?",
+        "correct_answer": "1872",
+        "incorrect_answers": [
+            "1880",
+            "1863",
+            "1865"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Ciências e Natureza",
+        "question": "Quantos planetas existem em nosso Sistema Solar?",
+        "correct_answer": "Oito",
+        "incorrect_answers": [
+            "Nove",
+            "Sete",
+            "Dez"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Cinema",
+        "question": "Quem interpretou o Thanos em Avengers: Infinity War e Avengers: Endgame?",
+        "correct_answer": "Josh Brolin",
+        "incorrect_answers": [
+            "Tom Hiddleston",
+            "Adam Sandler",
+            "Sean Gunn"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Quem criou a série \"Metal Gear\"?",
+        "correct_answer": "Hideo Kojima",
+        "incorrect_answers": [
+            "Hiroshi Yamauchi",
+            "Shigeru Miyamoto",
+            "Gunpei Yokoi"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "Em Calvin and Hobbes, qual é o nome do namorado da babá?",
+        "correct_answer": "Charlie",
+        "incorrect_answers": [
+            "Dave",
+            "Charles",
+            "Nathaniel"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Televisão",
+        "question": "Na série 'Doctor Who', qual é o nome do modelo de cápsula do tempo roubado por 'o Doutor'?",
+        "correct_answer": "TT Type 40, Mark 3 (TARDIS)",
+        "incorrect_answers": [
+            "TT Type 1, Mark 3 (TARDIS)",
+            "TT Type 40, Mark 5 (TARDIS)",
+            "TT Type 1, Mark 5 (TARDIS)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Na Primeira Guerra Mundial, qual era o nome da aliança formada por Alemanha, Áustria-Hungria, Império Otomano e Bulgária?",
+        "correct_answer": "As Potências Centrais",
+        "incorrect_answers": [
+            "As Potências do Eixo",
+            "A Federação dos Impérios",
+            "Aliança Autoritária"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Televisão",
+        "question": "Por quantos episódios durou a sequência de vitórias de Ken Jennings no Jeopardy?",
+        "correct_answer": "74",
+        "incorrect_answers": [
+            "88",
+            "49",
+            "62"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Conhecimentos Gerais",
+        "question": "O que é uma \"dakimakura\"?",
+        "correct_answer": "Um travesseiro de corpo",
+        "incorrect_answers": [
+            "Uma refeição chinesa composta essencialmente de peixe",
+            "Uma postura de ioga",
+            "Uma palavra usada para descrever duas pessoas que verdadeiramente se amam"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Qual desses Pais Fundadores dos Estados Unidos da América se tornou presidente posteriormente?",
+        "correct_answer": "James Monroe",
+        "incorrect_answers": [
+            "Alexander Hamilton",
+            "Samuel Adams",
+            "Roger Sherman"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Geografia",
+        "question": "Qual é a capital da Jamaica?",
+        "correct_answer": "Kingston",
+        "incorrect_answers": [
+            "San Juan",
+            "Porto Príncipe",
+            "Bridgetown"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Ciências e Natureza",
+        "question": "Qual parte do cérebro tem seu nome derivado do grego para 'cavalo-marinho'?",
+        "correct_answer": "Hipocampo",
+        "incorrect_answers": [
+            "Cerebelo",
+            "Tálamo",
+            "Amígdala"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "No universo fictício da Marvel Comics, qual é o nome do metal quase indestrutível que reveste os ossos e garras do Wolverine?",
+        "correct_answer": "Adamantium",
+        "incorrect_answers": [
+            "Titânio",
+            "Vibranium",
+            "Carbonadium"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Livros",
+        "question": "Qual das seguintes obras NÃO foi escrita por Fyodor Dostoevsky?",
+        "correct_answer": "Anna Karenina",
+        "incorrect_answers": [
+            "Memórias do Subsolo",
+            "Crime e Castigo",
+            "Os Irmãos Karamazov"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual era o slogan original do Mountain Dew?",
+        "correct_answer": "Yahoo! Mountain Dew... It'll tickle your innards!",
+        "incorrect_answers": [
+            "Give Me A Dew",
+            "Do The Dew",
+            "Get' that barefoot feelin' drinkin' Mountain Dew"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Televisão",
+        "question": "Em qual universidade trabalham os personagens de \"The Big Bang Theory\": Sr. Wolowitz e os Drs. Cooper, Hofstadter e Koothrappali?",
+        "correct_answer": "Caltech",
+        "incorrect_answers": [
+            "UCLA",
+            "MIT",
+            "UC Berkeley"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "História",
+        "question": "Em que ano começou a Primeira Guerra Mundial?",
+        "correct_answer": "1914",
+        "incorrect_answers": [
+            "1905",
+            "1919",
+            "1925"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Cinema",
+        "question": "No filme de 2012 \"The Lorax\", quem é o antagonista?",
+        "correct_answer": "Aloysius O'Hare",
+        "incorrect_answers": [
+            "Ted Wiggins",
+            "The Once-Ler",
+            "Grammy Norma"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Animais",
+        "question": "Como se chama o filhote de morcego?",
+        "correct_answer": "Pup",
+        "incorrect_answers": [
+            "Cub",
+            "Chick",
+            "Kid"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Videogames",
+        "question": "No jogo Minecraft, quantos lingotes de ferro são necessários para criar um golem de ferro?",
+        "correct_answer": "36",
+        "incorrect_answers": [
+            "40",
+            "32",
+            "46"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Antes da reformulação do logotipo da empresa no ano 2000, qual forma 3D NÃO estava representada no logotipo da Electronic Arts?",
+        "correct_answer": "Cilindro",
+        "incorrect_answers": [
+            "Pirâmide",
+            "Cubo",
+            "Esfera"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Geografia",
+        "question": "Broome é uma cidade em qual estado da Austrália?",
+        "correct_answer": "Austrália Ocidental",
+        "incorrect_answers": [
+            "Território do Norte",
+            "Austrália do Sul",
+            "Tasmânia"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Ciências: Tecnologia e Gadgets",
+        "question": "Quando o player de compact disc foi lançado pela primeira vez?",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1983",
+            "1981",
+            "1980"
+        ]
+    },
+    {
+      "type": "multiple",
+      "difficulty": "hard",
+      "category": "Entretenimento: Jogos de Tabuleiro",
+      "question": "Quando Magic: The Gathering foi apresentado pela primeira vez ao mercado, qual era o título original do jogo?",
+      "correct_answer": "Mana Clash",
+      "incorrect_answers": [
+          "Magic",
+          "Magic Clash",
+          "Mana Duels"
+      ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Conhecimentos Gerais",
+        "question": "Aproximadamente quantas sementes de maçã ingeridas seriam necessárias para receber uma dose fatal de cianeto?",
+        "correct_answer": "200",
+        "incorrect_answers": [
+            "20",
+            "2.000",
+            "20.000"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual brinquedo mais vendido de 1983 causou histeria, resultando em tumultos nas lojas?",
+        "correct_answer": "Cabbage Patch Kids",
+        "incorrect_answers": [
+            "Transformers",
+            "Care Bears",
+            "Cubo de Rubik"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Política",
+        "question": "De quem foi o slogan de campanha presidencial de 2016 \"Make America Great Again\"?",
+        "correct_answer": "Donald Trump",
+        "incorrect_answers": [
+            "Ted Cruz",
+            "Marco Rubio",
+            "Bernie Sanders"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Em \"Highschool DxD\", Koneko Toujou é de qual raça?",
+        "correct_answer": "Nekomata",
+        "incorrect_answers": [
+            "Kitsune",
+            "Humana",
+            "Kappa"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Jogos de Tabuleiro",
+        "question": "Em Dungeons and Dragons (5ª edição), qual atributo você normalmente adiciona à sua rolagem de dado de iniciativa?",
+        "correct_answer": "Destreza",
+        "incorrect_answers": [
+            "Velocidade",
+            "Força",
+            "Sabedoria"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Música",
+        "question": "Em que ano o icônico personagem de desenho animado Mickey Mouse fez sua estreia nas telas?",
+        "correct_answer": "1928",
+        "incorrect_answers": [
+            "1929",
+            "1922",
+            "1932"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Ciências e Natureza",
+        "question": "O que produz a cor verde da maioria das folhas das plantas?",
+        "correct_answer": "Clorofila",
+        "incorrect_answers": [
+            "Refração da luz",
+            "Pigmentos naturais",
+            "Radiação UV"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Qual personagem de \"JoJo's Bizarre Adventure\" NÃO possui uma referência a uma banda, artista ou música anterior a 1980?",
+        "correct_answer": "Giorno Giovanna",
+        "incorrect_answers": [
+            "Josuke Higashikata",
+            "Jolyne Cujoh",
+            "Johnny Joestar"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Livros",
+        "question": "Qual é o nome do pai de Harry Potter?",
+        "correct_answer": "James Potter",
+        "incorrect_answers": [
+            "Joey Potter",
+            "Frank Potter",
+            "Hairy Potter Sr."
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "medium",
+        "category": "Ciências: Informática",
+        "question": "O chip de computador ARM foi desenvolvido originalmente pela Acorn Computers.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Televisão",
+        "question": "Quem cantou a música tema do programa de TV 'Rawhide'?",
+        "correct_answer": "Frankie Laine",
+        "incorrect_answers": [
+            "Guy Mitchell",
+            "Tennessee Ernie Ford",
+            "Slim Whitman"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Geografia",
+        "question": "A cordilheira dos Pireneus está localizada na fronteira de quais dois países?",
+        "correct_answer": "França e Espanha",
+        "incorrect_answers": [
+            "Itália e Suíça",
+            "Noruega e Suécia",
+            "Rússia e Ucrânia"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "hard",
+        "category": "Conhecimentos Gerais",
+        "question": "\"Number 16 Bus Shelter\" foi um nome de criança aprovado pelo governo da Nova Zelândia.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Qual fuzil de assalto automático russo a gás foi desenvolvido na União Soviética em 1947 e ainda é muito utilizado hoje?",
+        "correct_answer": "AK-47",
+        "incorrect_answers": [
+            "RPK",
+            "M16",
+            "MG 42"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Música",
+        "question": "Qual foi o último álbum do Aphex Twin lançado antes de seu hiato de uma década?",
+        "correct_answer": "Drukqs",
+        "incorrect_answers": [
+            "Windowlicker",
+            "Syro",
+            "Collected Ambient Works 85-92"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Quem foi o autor do mangá Monster Hunter Orage?",
+        "correct_answer": "Hiro Mashima",
+        "incorrect_answers": [
+            "Shin Yamamoto",
+            "Keiichi Hikami",
+            "Hirohiko Araki"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Team Fortress 2, a arma \"Your Eternal Reward\" é uma referência ao filme Aladdin de 1992.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "boolean",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Em Until Dawn, os personagens Sam e Mike não podem ser mortos de forma alguma até o capítulo final do jogo.",
+        "correct_answer": "Verdadeiro",
+        "incorrect_answers": [
+            "Falso"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Videogames",
+        "question": "Na série Super Mario Bros., de qual jogo é o power-up \"Cenoura\"?",
+        "correct_answer": "Super Mario Land 2: The 6 Golden Coins",
+        "incorrect_answers": [
+            "Super Mario World",
+            "Super Mario Land",
+            "Super Mario 3D Land"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Quem foi o principal responsável pelo desenvolvimento do Canal de Suez?",
+        "correct_answer": "Ferdinand de Lesseps",
+        "incorrect_answers": [
+            "Louis-Eugène Cavaignac",
+            "John Milton",
+            "Johann Lukas von Hildebrandt"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual dos seguintes mapas estava presente em Team Fortress 2 no lançamento?",
+        "correct_answer": "Gravel Pit",
+        "incorrect_answers": [
+            "Hoodoo",
+            "Gold Rush",
+            "Upward"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Música",
+        "question": "Quem é o vocalista principal do Pearl Jam?",
+        "correct_answer": "Eddie Vedder",
+        "incorrect_answers": [
+            "Ozzy Osbourne",
+            "Stone Gossard",
+            "Kurt Cobain"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Videogames",
+        "question": "Qual foi o primeiro videogame com classificação M desenvolvido pela Squaresoft/Square Enix?",
+        "correct_answer": "Parasite Eve",
+        "incorrect_answers": [
+            "Final Fantasy VIII",
+            "Front Mission",
+            "Vagrant Story"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual é o significado completo da sigla RAM?",
+        "correct_answer": "Random Access Memory",
+        "incorrect_answers": [
+            "Random Assist Memory",
+            "Rand Assist Mandate",
+            "Ram"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Anime e Mangá Japonês",
+        "question": "Krusty é o mestre de qual guilda em \"Log Horizon\"?",
+        "correct_answer": "D. D. D",
+        "incorrect_answers": [
+            "Silver Sword",
+            "West Wind Brigade",
+            "Oceanic Systems (Marine Agency)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Conhecimentos Gerais",
+        "question": "Localizada no Chile, El Teniente é a maior mina subterrânea do mundo para qual metal?",
+        "correct_answer": "Cobre",
+        "incorrect_answers": [
+            "Ferro",
+            "Níquel",
+            "Prata"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Esportes",
+        "question": "Em que ano foi disputado o primeiro jogo internacional oficial?",
+        "correct_answer": "1872",
+        "incorrect_answers": [
+            "1880",
+            "1863",
+            "1865"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Ciências e Natureza",
+        "question": "Quantos planetas existem em nosso Sistema Solar?",
+        "correct_answer": "Oito",
+        "incorrect_answers": [
+            "Nove",
+            "Sete",
+            "Dez"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Cinema",
+        "question": "Quem interpretou o Thanos em Avengers: Infinity War e Avengers: Endgame?",
+        "correct_answer": "Josh Brolin",
+        "incorrect_answers": [
+            "Tom Hiddleston",
+            "Adam Sandler",
+            "Sean Gunn"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Quem criou a série \"Metal Gear\"?",
+        "correct_answer": "Hideo Kojima",
+        "incorrect_answers": [
+            "Hiroshi Yamauchi",
+            "Shigeru Miyamoto",
+            "Gunpei Yokoi"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "Em Calvin and Hobbes, qual é o nome do namorado da babá?",
+        "correct_answer": "Charlie",
+        "incorrect_answers": [
+            "Dave",
+            "Charles",
+            "Nathaniel"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "hard",
+        "category": "Entretenimento: Televisão",
+        "question": "Na série 'Doctor Who', qual é o nome do modelo de cápsula do tempo roubado por 'o Doutor'?",
+        "correct_answer": "TT Type 40, Mark 3 (TARDIS)",
+        "incorrect_answers": [
+            "TT Type 1, Mark 3 (TARDIS)",
+            "TT Type 40, Mark 5 (TARDIS)",
+            "TT Type 1, Mark 5 (TARDIS)"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Na Primeira Guerra Mundial, qual era o nome da aliança formada por Alemanha, Áustria-Hungria, Império Otomano e Bulgária?",
+        "correct_answer": "As Potências Centrais",
+        "incorrect_answers": [
+            "As Potências do Eixo",
+            "A Federação dos Impérios",
+            "Aliança Autoritária"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Televisão",
+        "question": "Por quantos episódios durou a sequência de vitórias de Ken Jennings no Jeopardy?",
+        "correct_answer": "74",
+        "incorrect_answers": [
+            "88",
+            "49",
+            "62"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Conhecimentos Gerais",
+        "question": "O que é uma \"dakimakura\"?",
+        "correct_answer": "Um travesseiro de corpo",
+        "incorrect_answers": [
+            "Uma refeição chinesa composta essencialmente de peixe",
+            "Uma postura de ioga",
+            "Uma palavra usada para descrever duas pessoas que verdadeiramente se amam"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "História",
+        "question": "Qual desses Pais Fundadores dos Estados Unidos da América se tornou presidente posteriormente?",
+        "correct_answer": "James Monroe",
+        "incorrect_answers": [
+            "Alexander Hamilton",
+            "Samuel Adams",
+            "Roger Sherman"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Geografia",
+        "question": "Qual é a capital da Jamaica?",
+        "correct_answer": "Kingston",
+        "incorrect_answers": [
+            "San Juan",
+            "Porto Príncipe",
+            "Bridgetown"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Ciências e Natureza",
+        "question": "Qual parte do cérebro tem seu nome derivado do grego para 'cavalo-marinho'?",
+        "correct_answer": "Hipocampo",
+        "incorrect_answers": [
+            "Cerebelo",
+            "Tálamo",
+            "Amígdala"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Quadrinhos",
+        "question": "No universo fictício da Marvel Comics, qual é o nome do metal quase indestrutível que reveste os ossos e garras do Wolverine?",
+        "correct_answer": "Adamantium",
+        "incorrect_answers": [
+            "Titânio",
+            "Vibranium",
+            "Carbonadium"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Livros",
+        "question": "Qual das seguintes obras NÃO foi escrita por Fyodor Dostoevsky?",
+        "correct_answer": "Anna Karenina",
+        "incorrect_answers": [
+            "Memórias do Subsolo",
+            "Crime e Castigo",
+            "Os Irmãos Karamazov"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Conhecimentos Gerais",
+        "question": "Qual era o slogan original do Mountain Dew?",
+        "correct_answer": "Yahoo! Mountain Dew... It'll tickle your innards!",
+        "incorrect_answers": [
+            "Give Me A Dew",
+            "Do The Dew",
+            "Get' that barefoot feelin' drinkin' Mountain Dew"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Televisão",
+        "question": "Em qual universidade trabalham os personagens de \"The Big Bang Theory\": Sr. Wolowitz e os Drs. Cooper, Hofstadter e Koothrappali?",
+        "correct_answer": "Caltech",
+        "incorrect_answers": [
+            "UCLA",
+            "MIT",
+            "UC Berkeley"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "História",
+        "question": "Em que ano começou a Primeira Guerra Mundial?",
+        "correct_answer": "1914",
+        "incorrect_answers": [
+            "1905",
+            "1919",
+            "1925"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Cinema",
+        "question": "No filme de 2012 \"The Lorax\", quem é o antagonista?",
+        "correct_answer": "Aloysius O'Hare",
+        "incorrect_answers": [
+            "Ted Wiggins",
+            "The Once-Ler",
+            "Grammy Norma"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Animais",
+        "question": "Como se chama o filhote de morcego?",
+        "correct_answer": "Pup",
+        "incorrect_answers": [
+            "Cub",
+            "Chick",
+            "Kid"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Entretenimento: Videogames",
+        "question": "No jogo Minecraft, quantos lingotes de ferro são necessários para criar um golem de ferro?",
+        "correct_answer": "36",
+        "incorrect_answers": [
+            "40",
+            "32",
+            "46"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "easy",
+        "category": "Entretenimento: Videogames",
+        "question": "Antes da reformulação do logotipo da empresa no ano 2000, qual forma 3D NÃO estava representada no logotipo da Electronic Arts?",
+        "correct_answer": "Cilindro",
+        "incorrect_answers": [
+            "Pirâmide",
+            "Cubo",
+            "Esfera"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Geografia",
+        "question": "Broome é uma cidade em qual estado da Austrália?",
+        "correct_answer": "Austrália Ocidental",
+        "incorrect_answers": [
+            "Território do Norte",
+            "Austrália do Sul",
+            "Tasmânia"
+        ]
+    },
+    {
+        "type": "multiple",
+        "difficulty": "medium",
+        "category": "Ciências: Tecnologia e Gadgets",
+        "question": "Quando o player de compact disc foi lançado pela primeira vez?",
+        "correct_answer": "1982",
+        "incorrect_answers": [
+            "1983",
+            "1981",
+            "1980"
+        ]
+    }
+  ]
+}

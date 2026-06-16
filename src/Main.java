@@ -1,7 +1,171 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
+import entities.Questao;
+import entities.Usuario;
+import enums.Dificuldade;
+import services.GerenciadorQuiz;
+import services.QuestaoParser;
 
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Scanner;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        Usuario usuario = new Usuario(1, "Pedro", "pedro@email.com");
+        List<Questao> questoes = carregarQuestoes();
+
+        if (questoes.isEmpty()) {
+            System.out.println("Nenhuma questao foi carregada. Encerrando teste.");
+            scanner.close();
+            return;
+        }
+
+        List<Dificuldade> dificuldadesPermitidas = escolherDificuldades(scanner);
+        List<String> categoriasPermitidas = escolherCategorias(scanner, questoes);
+
+        GerenciadorQuiz gerenciador = new GerenciadorQuiz(
+            questoes,
+            usuario,
+            dificuldadesPermitidas,
+            categoriasPermitidas
+        );
+
+        System.out.println("=== Quiz infinito ===");
+        System.out.println("O jogo acaba quando voce errar.\n");
+
+        while (!gerenciador.isJogoFinalizado()) {
+            Questao questaoAtual = gerenciador.getQuestaoAtual();
+
+            System.out.println("ID: " + questaoAtual.getId());
+            System.out.println("Dificuldade: " + questaoAtual.getDificuldade().getDescricao());
+            System.out.println("Pergunta: " + questaoAtual.getEnunciado());
+            System.out.print("Resposta: ");
+
+            String resposta = scanner.nextLine();
+
+            boolean acertou = gerenciador.responder(resposta);
+
+            if (acertou) {
+                System.out.println("Acertou!");
+                System.out.println("Pontuacao da partida: " + gerenciador.getPontuacaoAtual());
+                System.out.println("Acertos: " + gerenciador.getAcertos());
+                System.out.println("IDs ja sorteados: " + gerenciador.getIdsQuestoesSorteadas());
+                System.out.println();
+            } else {
+                System.out.println("Errou! Fim de jogo.");
+            }
+        }
+
+        System.out.println("\nPontuacao final da partida: " + gerenciador.getPontuacaoAtual());
+        System.out.println("Pontuacao global do usuario: " + usuario.getPontuacao());
+        System.out.println("Total de acertos: " + gerenciador.getAcertos());
+
+        scanner.close();
+    }
+
+    private static List<Questao> carregarQuestoes() {
+        QuestaoParser parser = new QuestaoParser();
+
+        try {
+            return parser.carregarQuestoes("resources/testequestoes.txt");
+        } catch (IOException e) {
+            System.out.println("Nao foi possivel carregar o arquivo de questoes.");
+            System.out.println(e.getMessage());
+            return List.of();
+        }
+    }
+
+    private static List<Dificuldade> escolherDificuldades(Scanner scanner) {
+        List<Dificuldade> dificuldadesPermitidas = new ArrayList<>();
+
+        System.out.println("=== Selecao de dificuldades ===");
+        System.out.println("Digite os numeros das dificuldades que deseja liberar.");
+        System.out.println("Exemplo: 1 2 para liberar faceis e medias.");
+        System.out.println("1 - Faceis");
+        System.out.println("2 - Medias");
+        System.out.println("3 - Dificeis");
+        System.out.println("4 - Todas");
+        System.out.print("Opcao: ");
+
+        String escolha = scanner.nextLine();
+
+        if (escolha.contains("4")) {
+            return List.of(Dificuldade.FACIL, Dificuldade.MEDIO, Dificuldade.DIFICIL);
+        }
+
+        if (escolha.contains("1")) {
+            dificuldadesPermitidas.add(Dificuldade.FACIL);
+        }
+
+        if (escolha.contains("2")) {
+            dificuldadesPermitidas.add(Dificuldade.MEDIO);
+        }
+
+        if (escolha.contains("3")) {
+            dificuldadesPermitidas.add(Dificuldade.DIFICIL);
+        }
+
+        if (dificuldadesPermitidas.isEmpty()) {
+            System.out.println("Nenhuma dificuldade valida selecionada. Usando todas.\n");
+            return List.of(Dificuldade.FACIL, Dificuldade.MEDIO, Dificuldade.DIFICIL);
+        }
+
+        System.out.println();
+        return dificuldadesPermitidas;
+    }
+
+    private static List<String> escolherCategorias(Scanner scanner, List<Questao> questoes) {
+        // Descobre todas as categorias únicas presentes nas questões carregadas
+        List<String> categoriasDisponiveis = new ArrayList<>();
+        for (Questao q : questoes) {
+            if (!categoriasDisponiveis.contains(q.getAssunto())) {
+                categoriasDisponiveis.add(q.getAssunto());
+            }
+        }
+
+        System.out.println("\n=== Selecao de Categorias ===");
+        System.out.println("Digite os numeros das categorias que deseja incluir separando por espaco.");
+        System.out.println("Exemplo: 1 3 para incluir apenas as categorias 1 e 3.");
+        
+        for (int i = 0; i < categoriasDisponiveis.size(); i++) {
+            System.out.println((i + 1) + " - " + categoriasDisponiveis.get(i));
+        }
+        int opcaoTodas = categoriasDisponiveis.size() + 1;
+        System.out.println(opcaoTodas + " - Todas as categorias");
+        System.out.print("Opcao: ");
+
+        String escolha = scanner.nextLine();
+        
+        // Se escolheu "Todas" ou deixou em branco, retorna a lista completa
+        if (escolha.contains(String.valueOf(opcaoTodas)) || escolha.trim().isEmpty()) {
+            return categoriasDisponiveis;
+        }
+
+        List<String> categoriasSelecionadas = new ArrayList<>();
+        String[] partes = escolha.split("\\s+"); // Separa por espaços
+        
+        for (String parte : partes) {
+            try {
+                int indice = Integer.parseInt(parte) - 1;
+                if (indice >= 0 && indice < categoriasDisponiveis.size()) {
+                    String cat = categoriasDisponiveis.get(indice);
+                    if (!categoriasSelecionadas.contains(cat)) {
+                        categoriasSelecionadas.add(cat);
+                    }
+                }
+            } catch (NumberFormatException e) {
+                // Ignora caso o usuário digite alguma letra inválida
+            }
+        }
+
+        if (categoriasSelecionadas.isEmpty()) {
+            System.out.println("Nenhuma categoria valida selecionada. Jogando com todas.");
+            return categoriasDisponiveis;
+        }
+
+        return categoriasSelecionadas;
     }
 }

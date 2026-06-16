@@ -48,6 +48,14 @@ public class Usuario {
     	if (pontuacao > pontuacaoMax) pontuacaoMax = pontuacao;
     }
 
+    public void adicionarPontuacao(int pontos) {
+        this.pontuacao += pontos;
+    }
+
+    public void adicionarPontuacaoPorQuestao(Questao questao) {
+        this.pontuacao += questao.calcularPontuacao();
+    }
+
     public int getId() {
         return id;
     }

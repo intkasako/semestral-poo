@@ -18,6 +18,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // carrega o ranking salvo em arquivo e faz login ou cadastro do jogador
         Leaderboard leaderboard = new Leaderboard("leaderboard.txt");
         Usuario usuario = loginOuCadastro(scanner, leaderboard);
         List<Questao> questoes = carregarQuestoes();
@@ -28,9 +29,11 @@ public class Main {
             return;
         }
 
+        // deixa o jogador escolher os filtros antes de comecar
         List<Dificuldade> dificuldadesPermitidas = escolherDificuldades(scanner);
         List<String> categoriasPermitidas = escolherCategorias(scanner, questoes);
 
+        // monta o gerenciador com as questoes ja filtradas por dificuldade e categoria
         GerenciadorQuiz gerenciador = new GerenciadorQuiz(
             questoes,
             usuario,
@@ -41,6 +44,7 @@ public class Main {
         System.out.println("=== Quiz infinito ===");
         System.out.println("O jogo acaba quando voce errar.\n");
 
+        // loop principal — continua ate o jogador errar
         while (!gerenciador.isJogoFinalizado()) {
             Questao questaoAtual = gerenciador.getQuestaoAtual();
 
@@ -48,7 +52,9 @@ public class Main {
             System.out.println("Dificuldade: " + questaoAtual.getDificuldade().getDescricao());
             System.out.println("Pergunta: " + questaoAtual.getEnunciado());
 
+            // mostra as opcoes dependendo do tipo da questao
             if (questaoAtual instanceof QuestaoMultiplaEscolha qme) {
+                // ordena pra sempre mostrar A, B, C, D em ordem
                 List<Alternativa> ordenadas = new ArrayList<>(qme.getAlternativas());
                 ordenadas.sort((a, b) -> a.getLetra().getValor() - b.getLetra().getValor());
                 for (Alternativa alt : ordenadas) {
@@ -76,10 +82,12 @@ public class Main {
             }
         }
 
+        // resumo final da partida
         System.out.println("\nPontuacao final da partida: " + gerenciador.getPontuacaoAtual());
         System.out.println("Pontuacao global de " + usuario.getNome() + ": " + usuario.getPontuacao());
         System.out.println("Total de acertos: " + gerenciador.getAcertos());
 
+        // salva o resultado no ranking e mostra o placar
         leaderboard.registrar(usuario);
         leaderboard.exibir();
 

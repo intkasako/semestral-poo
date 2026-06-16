@@ -8,12 +8,14 @@ public class Leaderboard {
     private List<Usuario> ranking;
     private String arquivo;
 
+    // ao criar o leaderboard, ja tenta carregar os dados salvos do arquivo
     public Leaderboard(String arquivo) {
         this.ranking = new ArrayList<>();
         this.arquivo = arquivo;
         carregar();
     }
 
+    // atualiza o recorde do jogador, adiciona ele no ranking se for novo, reordena e salva no txt
     public void registrar(Usuario usuario) {
         usuario.isMaiorPontuacao();
 
@@ -26,6 +28,7 @@ public class Leaderboard {
         salvar();
     }
 
+    // procura um usuario pelo nome e email pra fazer o login
     public Usuario buscarUsuario(String nome, String email) {
         for (Usuario u : ranking) {
             if (u.getNome().equalsIgnoreCase(nome) && u.getEmail().equalsIgnoreCase(email)) {
@@ -35,6 +38,7 @@ public class Leaderboard {
         return null;
     }
 
+    // pega o maior id que existe e soma 1, assim cada usuario novo tem um id unico
     public int proximoId() {
         int maior = 0;
         for (Usuario u : ranking) {
@@ -45,6 +49,7 @@ public class Leaderboard {
         return maior + 1;
     }
 
+    // mostra o placar no console, do primeiro ao ultimo lugar
     public void exibir() {
         System.out.println();
         System.out.println("=============================");
@@ -63,6 +68,7 @@ public class Leaderboard {
         System.out.println("=============================");
     }
 
+    // escreve todos os usuarios no txt, uma linha por jogador no formato: id;nome;email;pontuacaoMax
     private void salvar() {
         try (PrintWriter writer = new PrintWriter(new FileWriter(arquivo))) {
             for (Usuario u : ranking) {
@@ -73,6 +79,7 @@ public class Leaderboard {
         }
     }
 
+    // le o txt linha por linha e recria cada usuario com seus dados salvos
     private void carregar() {
         File file = new File(arquivo);
         if (!file.exists()) return;
@@ -83,6 +90,7 @@ public class Leaderboard {
                 linha = linha.trim();
                 if (linha.isEmpty()) continue;
 
+                // cada linha tem o formato: id;nome;email;pontuacaoMax
                 String[] partes = linha.split(";");
                 int id = Integer.parseInt(partes[0]);
                 String nome = partes[1];
@@ -98,6 +106,7 @@ public class Leaderboard {
             System.out.println("Erro ao carregar leaderboard: " + e.getMessage());
         }
 
+        // ordena do maior pro menor pra manter o ranking certo
         ranking.sort((a, b) -> b.getpontuacaoMax() - a.getpontuacaoMax());
     }
 

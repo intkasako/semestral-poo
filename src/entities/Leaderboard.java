@@ -134,11 +134,7 @@ public class Leaderboard {
             System.out.println("Erro ao carregar leaderboard: " + e.getMessage());
         }
 
-        // ordena do maior pro menor registrando cada usuario carregado
-        for (Usuario u : ranking) {
-            u.setExisteLeaderboard(true);
-        }
-        // reusa a mesma logica do registrar pra cada usuario subir no ranking
+        // ordena do maior pro menor usando a mesma logica do registrar
         for (int i = 1; i < ranking.size(); i++) {
             int index = i;
             while (true) {

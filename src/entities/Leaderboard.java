@@ -19,12 +19,40 @@ public class Leaderboard {
     public void registrar(Usuario usuario) {
         usuario.isMaiorPontuacao();
 
+        // verifica se ja tem no ranking
         if (!usuario.existeLeaderboard()) {
             ranking.add(usuario);
             usuario.setExisteLeaderboard(true);
         }
 
-        ranking.sort((a, b) -> b.getpontuacaoMax() - a.getpontuacaoMax());
+        // procura e salva o index da pessoa
+        int index = 0;
+        for (Usuario u : ranking) {
+            if (u.getId() == usuario.getId()) {
+                index = ranking.indexOf(u);
+            }
+        }
+
+        while (true) {
+            // verifica se ja e o primeiro lugar
+            if (index == 0) {
+                break;
+            }
+
+            // se a pessoa acima tiver mais pontos, para o ciclo
+            if (ranking.get(index).getpontuacaoMax() <= ranking.get(index - 1).getpontuacaoMax()) {
+                break;
+            }
+
+            // sobe no placar
+            if (ranking.get(index).getpontuacaoMax() > ranking.get(index - 1).getpontuacaoMax()) {
+                Usuario temporario = ranking.get(index);
+                ranking.set(index, ranking.get(index - 1));
+                ranking.set(index - 1, temporario);
+                index -= 1;
+            }
+        }
+
         salvar();
     }
 
@@ -107,7 +135,15 @@ public class Leaderboard {
         }
 
         // ordena do maior pro menor pra manter o ranking certo
-        ranking.sort((a, b) -> b.getpontuacaoMax() - a.getpontuacaoMax());
+        for (int i = 0; i < ranking.size() - 1; i++) {
+            for (int j = 0; j < ranking.size() - 1 - i; j++) {
+                if (ranking.get(j).getpontuacaoMax() < ranking.get(j + 1).getpontuacaoMax()) {
+                    Usuario temporario = ranking.get(j);
+                    ranking.set(j, ranking.get(j + 1));
+                    ranking.set(j + 1, temporario);
+                }
+            }
+        }
     }
 
     public List<Usuario> getRanking() {

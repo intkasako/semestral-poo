@@ -2,310 +2,128 @@ package services;
 
 import entities.Questao;
 import entities.Usuario;
-import enums.Dificuldade;
 
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.EnumMap;
 import java.util.List;
-import java.util.Map;
-import java.util.Random;
 
-// Esta classe controla o fluxo do jogo a partir do inicio da partida ate o fim.
+
 public class GerenciadorQuiz {
     private List<Questao> questoes;
-    private Map<Dificuldade, List<Questao>> questoesPorDificuldade;
-    private Map<Dificuldade, Integer> indicesPorDificuldade;
+    private int indiceAtual; //Controla qual questão da lista está sendo lida.
     private Usuario usuarioAtual;
     private Questao questaoAtual;
     private Boolean jogoFinalizado;
-    private Random random;
     private Integer acertos;
     private Integer pontuacaoPartida;
-    private List<Dificuldade> dificuldadesPermitidas;
-    private List<Integer> idsQuestoesSorteadas;
-    private List<String> categoriasPermitidas;
 
-    public GerenciadorQuiz(List<Questao> questoes, Usuario usuarioAtual, List<Dificuldade> dificuldadesPermitidas, List<String> categoriasPermitidas) {
-        this.questoes = questoes;
-        this.questoesPorDificuldade = new EnumMap<>(Dificuldade.class);
-        this.indicesPorDificuldade = new EnumMap<>(Dificuldade.class);
+    public GerenciadorQuiz(List<Questao> questoes, Usuario usuarioAtual) {
+
+        //Cria uma cópia da lista e embaralha todas as questões de forma aleatória.
+        this.questoes = new ArrayList<>(questoes);
+
+        //Embaralha a lista de questões.
+        Collections.shuffle(this.questoes);
+        
+        this.indiceAtual = 0;
         this.usuarioAtual = usuarioAtual;
-        this.questaoAtual = null;
         this.jogoFinalizado = false;
-        this.random = new Random();
         this.acertos = 0;
         this.pontuacaoPartida = 0;
-        this.dificuldadesPermitidas = dificuldadesPermitidas;
-        this.idsQuestoesSorteadas = new ArrayList<>();
-        this.categoriasPermitidas = categoriasPermitidas;
 
-        organizarQuestoesPorDificuldade();
+        //Inicia o sorteio de questões.
         sortearProximaQuestao();
     }
 
-    // Getters e Setters:
+    //      Getters e Setters
 
-    public List<Questao> getQuestoes() {
-        return questoes;
+    public Questao getQuestaoAtual() { 
+        return questaoAtual; 
+    }
+    public void setQuestaoAtual(Questao questaoAtual) { 
+        this.questaoAtual = questaoAtual; 
     }
 
-    public void setQuestoes(List<Questao> questoes) {
-        this.questoes = questoes;
-        this.idsQuestoesSorteadas.clear();
-        organizarQuestoesPorDificuldade();
-        sortearProximaQuestao();
+    public Boolean isJogoFinalizado() { 
+        return jogoFinalizado; 
+    }
+    public void setJogoFinalizado(Boolean jogoFinalizado) { 
+        this.jogoFinalizado = jogoFinalizado; 
     }
 
-    public Usuario getUsuarioAtual() {
-        return usuarioAtual;
+
+    public Integer getPontuacaoAtual() { 
+        return pontuacaoPartida; 
+    }
+    public void setPontuacaoAtual(Integer pontuacaoAtual) { 
+        this.pontuacaoPartida = pontuacaoAtual; 
     }
 
-    public void setUsuarioAtual(Usuario usuarioAtual) {
-        this.usuarioAtual = usuarioAtual;
+    public Integer getAcertos() { 
+        return acertos; 
+    }
+    public void setAcertos(Integer acertos) { 
+        this.acertos = acertos; 
     }
 
-    public Questao getQuestaoAtual() {
-        return questaoAtual;
+    public Usuario getUsuarioAtual() { 
+        return usuarioAtual; 
+    }
+    public void setUsuarioAtual(Usuario usuarioAtual) { 
+        this.usuarioAtual = usuarioAtual; 
     }
 
-    public void setQuestaoAtual(Questao questaoAtual) {
-        this.questaoAtual = questaoAtual;
-    }
 
-    public Boolean getJogoFinalizado() {
-        return jogoFinalizado;
-    }
-
-    public void setJogoFinalizado(Boolean jogoFinalizado) {
-        this.jogoFinalizado = jogoFinalizado;
-    }
-
-    public Random getRandom() {
-        return random;
-    }
-
-    public void setRandom(Random random) {
-        this.random = random;
-    }
-
-    public Integer getAcertos() {
-        return acertos;
-    }
-
-    public void setAcertos(Integer acertos) {
-        this.acertos = acertos;
-    }
-
-    public Integer getPontuacaoPartida() {
-        return pontuacaoPartida;
-    }
-
-    public void setPontuacaoPartida(Integer pontuacaoPartida) {
-        this.pontuacaoPartida = pontuacaoPartida;
-    }
-
-    public List<Dificuldade> getDificuldadesPermitidas() {
-        return dificuldadesPermitidas;
-    }
-
-    public void setDificuldadesPermitidas(List<Dificuldade> dificuldadesPermitidas) {
-        this.dificuldadesPermitidas = dificuldadesPermitidas;
-        sortearProximaQuestao();
-    }
-
-    public List<Integer> getIdsQuestoesSorteadas() {
-        return idsQuestoesSorteadas;
-    }
-
-    public List<Integer> getIdsQuestaoSorteada() {
-        return getIdsQuestoesSorteadas();
-    }
-
-    public List<String> getCategoriasPermitidas() {
-        return categoriasPermitidas;
-    }
-
-    public void setCategoriasPermitidas(List<String> categoriasPermitidas) {
-        this.categoriasPermitidas = categoriasPermitidas;
-        sortearProximaQuestao();
-    }
-
-    // Funcoes:
-
-    public Integer getPontuacaoAtual() {
-        return pontuacaoPartida;
-    }
-
-    public Boolean isJogoFinalizado() {
-        return jogoFinalizado;
-    }
-
-    private void organizarQuestoesPorDificuldade() {
-    questoesPorDificuldade.clear();
-    indicesPorDificuldade.clear();
-
-    for (Dificuldade dificuldade : Dificuldade.values()) {
-        questoesPorDificuldade.put(dificuldade, new ArrayList<>());
-        indicesPorDificuldade.put(dificuldade, 0);
-    }
-
-    if (questoes == null) {
-        return;
-    }
-
-    for (Questao questao : questoes) {
-        if (categoriaPermitida(questao.getAssunto())) { //Se a categoria da questão for permitida, ela pegará as questões por dificuldade.
-            questoesPorDificuldade.get(questao.getDificuldade()).add(questao);
-        }
-    }
-
-    for (List<Questao> lista : questoesPorDificuldade.values()) {
-        Collections.shuffle(lista, random);
-    }
-}
-
-    private Dificuldade sortearDificuldadePorProgresso() {
-        if (acertos < 5) {
-            return Dificuldade.FACIL;
-        }
-
-        int chance = random.nextInt(100);
-
-        if (acertos < 15) {
-            int chanceMedia = (acertos - 4) * 10;
-            return chance < chanceMedia ? Dificuldade.MEDIO : Dificuldade.FACIL;
-        }
-
-        if (acertos < 30) {
-            if (chance < 30) {
-                return Dificuldade.FACIL;
-            }
-
-            if (chance < 75) {
-                return Dificuldade.MEDIO;
-            }
-
-            return Dificuldade.DIFICIL;
-        }
-
-        if (acertos < 50) {
-            int chanceDificil = 40 + ((acertos - 30) * 3);
-            return chance < chanceDificil ? Dificuldade.DIFICIL : Dificuldade.MEDIO;
-        }
-
-        return Dificuldade.DIFICIL;
-    }
-
-    private Dificuldade sortearDificuldadePermitida() {
-        if (dificuldadesPermitidas == null || dificuldadesPermitidas.isEmpty()) {
-            return sortearDificuldadePorProgresso();
-        }
-
-        for (int tentativa = 0; tentativa < 10; tentativa++) {
-            Dificuldade dificuldadeSorteada = sortearDificuldadePorProgresso();
-
-            if (dificuldadesPermitidas.contains(dificuldadeSorteada)) {
-                return dificuldadeSorteada;
-            }
-        }
-
-        int indiceSorteado = random.nextInt(dificuldadesPermitidas.size());
-        return dificuldadesPermitidas.get(indiceSorteado);
-    }
+    //         Funções
 
     private void sortearProximaQuestao() {
+
+        //Se a lista de questões estiver vazia, termina o jogo.
         if (questoes == null || questoes.isEmpty()) {
             questaoAtual = null;
+            jogoFinalizado = true;
+            somarPontuacaoPartidaAoUsuario();
             return;
         }
 
-        Dificuldade dificuldadeSorteada = sortearDificuldadePermitida();
-        Questao questaoSorteada = pegarProximaQuestaoDaDificuldade(dificuldadeSorteada);
-
-        if (questaoSorteada == null) {
-            questaoSorteada = pegarProximaQuestaoPermitida();
+        //Ao chegar no final da lista de questões, reembaralha a lista inteira e volta para o início (índice 0).
+        if (indiceAtual >= questoes.size()) {
+            Collections.shuffle(this.questoes);
+            indiceAtual = 0;                    
         }
 
-        questaoAtual = questaoSorteada;
-
-        if (questaoAtual != null) {
-            idsQuestoesSorteadas.add(questaoAtual.getId());
-        }
-    }
-
-    private Questao pegarProximaQuestaoDaDificuldade(Dificuldade dificuldade) {
-        if (!dificuldadePermitida(dificuldade)) {
-            return null;
-        }
-
-        List<Questao> lista = questoesPorDificuldade.get(dificuldade);
-
-        if (lista == null || lista.isEmpty()) {
-            return null;
-        }
-
-        Integer indiceAtual = indicesPorDificuldade.get(dificuldade);
-
-        if (indiceAtual >= lista.size()) {
-            Collections.shuffle(lista, random);
-            indiceAtual = 0;
-        }
-
-        Questao questao = lista.get(indiceAtual);
-        indicesPorDificuldade.put(dificuldade, indiceAtual + 1);
-        return questao;
-    }
-
-    private Questao pegarProximaQuestaoPermitida() {
-        List<Dificuldade> dificuldadesComQuestoes = new ArrayList<>();
-
-        for (Dificuldade dificuldade : Dificuldade.values()) {
-            List<Questao> lista = questoesPorDificuldade.get(dificuldade);
-
-            if (dificuldadePermitida(dificuldade) && lista != null && !lista.isEmpty()) {
-                dificuldadesComQuestoes.add(dificuldade);
-            }
-        }
-
-        if (dificuldadesComQuestoes.isEmpty()) {
-            return null;
-        }
-
-        Dificuldade dificuldadeSorteada = dificuldadesComQuestoes.get(random.nextInt(dificuldadesComQuestoes.size()));
-        return pegarProximaQuestaoDaDificuldade(dificuldadeSorteada);
-    }
-
-    private boolean dificuldadePermitida(Dificuldade dificuldade) {
-        return dificuldadesPermitidas == null || dificuldadesPermitidas.isEmpty() || dificuldadesPermitidas.contains(dificuldade);
-    }
-
-    private boolean categoriaPermitida(String categoria) {
-        return categoriasPermitidas == null || categoriasPermitidas.isEmpty() || categoriasPermitidas.contains(categoria);
+        //Pega a questão na posição do índice atual e a define como a questão atual do jogo.
+        questaoAtual = questoes.get(indiceAtual);
+        
+        //Aumenta o índice para a próxima questão.
+        indiceAtual++; 
     }
 
     public boolean responder(String respostaDoUsuario) {
-        Questao questaoAtual = getQuestaoAtual();
-
         if (questaoAtual == null || jogoFinalizado) {
             return false;
         }
 
+
+        //Verifica resposta.
         boolean acertou = questaoAtual.verificarResposta(respostaDoUsuario);
 
+        //Se acertou, soma à pontuação da partida + Número de acertos.
         if (acertou) {
             pontuacaoPartida += questaoAtual.calcularPontuacao();
             acertos++;
-            sortearProximaQuestao();
+            sortearProximaQuestao(); //Traz a próxima pergunta
         } else {
-            jogoFinalizado = true;
-            somarPontuacaoPartidaAoUsuario();
+            jogoFinalizado = true; //Errou, fim de jogo.
+            somarPontuacaoPartidaAoUsuario(); //Soma ao usuário a pontuação da partida.
         }
 
         return acertou;
     }
 
     private void somarPontuacaoPartidaAoUsuario() {
-        usuarioAtual.adicionarPontuacao(pontuacaoPartida);
+        if (usuarioAtual != null) {
+            usuarioAtual.adicionarPontuacao(pontuacaoPartida);
+        }
     }
 }

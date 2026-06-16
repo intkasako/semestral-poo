@@ -134,14 +134,17 @@ public class Leaderboard {
             System.out.println("Erro ao carregar leaderboard: " + e.getMessage());
         }
 
-        // ordena do maior pro menor pra manter o ranking certo
-        for (int i = 0; i < ranking.size() - 1; i++) {
-            for (int j = 0; j < ranking.size() - 1 - i; j++) {
-                if (ranking.get(j).getpontuacaoMax() < ranking.get(j + 1).getpontuacaoMax()) {
-                    Usuario temporario = ranking.get(j);
-                    ranking.set(j, ranking.get(j + 1));
-                    ranking.set(j + 1, temporario);
-                }
+        // ordena do maior pro menor usando a mesma logica do registrar
+        for (int i = 1; i < ranking.size(); i++) {
+            int index = i;
+            while (true) {
+                if (index == 0) break;
+                if (ranking.get(index).getpontuacaoMax() <= ranking.get(index - 1).getpontuacaoMax()) break;
+
+                Usuario temporario = ranking.get(index);
+                ranking.set(index, ranking.get(index - 1));
+                ranking.set(index - 1, temporario);
+                index -= 1;
             }
         }
     }
